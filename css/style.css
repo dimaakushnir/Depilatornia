@@ -1,0 +1,3868 @@
+@font-face {
+  font-family: AcciaSans;
+  font-display: swap;
+  src: url("../fonts/AcciaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: AcciaSans;
+  font-display: swap;
+  src: url("../fonts/AcciaSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: AcciaSans;
+  font-display: swap;
+  src: url("../fonts/AcciaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: AcciaSans;
+  font-display: swap;
+  src: url("../fonts/AcciaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: AcciaSans;
+  font-display: swap;
+  src: url("../fonts/AcciaSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair;
+  font-display: swap;
+  src: url("../fonts/Playfair_9pt-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair;
+  font-display: swap;
+  src: url("../fonts/Playfair_9pt-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --color-1: #292929;
+  --color-2: #77777A;
+  --color-3: #F8F8F8;
+  --color-4: #B3A394;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "AcciaSans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "AcciaSans";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: var(--color-1);
+  background-color: var(--color-3);
+}
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 60px;
+}
+@media (max-width: 1332px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.btn {
+  height: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.btn_black {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+@media (min-width: 1024.98px) {
+  .btn_black:hover {
+    background-color: #191919;
+  }
+}
+.btn_brown {
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+@media (min-width: 1024.98px) {
+  .btn_brown:hover {
+    background-color: #af9985;
+  }
+}
+.btn_white-transparent {
+  border: 1px solid #F8F8F8;
+  color: var(--color-3);
+}
+@media (min-width: 1024.98px) {
+  .btn_white-transparent:hover {
+    background-color: var(--color-3);
+    color: var(--color-1);
+  }
+}
+
+.btn-registration {
+  display: flex;
+  align-items: center;
+  padding: 55px 0 50.5px 70px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn-registration::before {
+  position: absolute;
+  content: "";
+  flex: 0 0 137.92px;
+  width: 137.92px;
+  height: 140px;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--color-1);
+  transform: translate(0, -2.5px);
+}
+@media (max-width: 1332px) {
+  .btn-registration::before {
+    flex: 0 0 130px;
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .btn-registration::before {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 768.98px) {
+  .btn-registration::before {
+    flex: 0 0 110px;
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 480.98px) {
+  .btn-registration::before {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+  }
+}
+.btn-registration:hover {
+  padding: 55px 0 50.5px 65px;
+}
+.btn-registration:hover .btn-registration__arrow svg {
+  opacity: 1;
+}
+@media (max-width: 1332px) {
+  .btn-registration {
+    padding: 50.5px 0 43.5px 65px;
+  }
+  .btn-registration:hover {
+    padding: 50.5px 0 43.5px 60px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .btn-registration {
+    padding: 46.5px 0 40px 60px;
+  }
+  .btn-registration:hover {
+    padding: 46.5px 0 40px 60px;
+  }
+  .btn-registration:hover .btn-registration__arrow svg {
+    opacity: 0.3;
+  }
+}
+@media (max-width: 768.98px) {
+  .btn-registration {
+    padding: 42px 0 35.5px 55px;
+  }
+  .btn-registration:hover {
+    padding: 42px 0 35.5px 55px;
+  }
+}
+@media (max-width: 480.98px) {
+  .btn-registration {
+    padding: 38.5px 0 32.5px 50px;
+  }
+  .btn-registration:hover {
+    padding: 38.5px 0 32.5px 50px;
+  }
+}
+.btn-registration__text {
+  position: relative;
+  font-family: Playfair;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  z-index: 1;
+  margin: 0 20px 0 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 1332px) {
+  .btn-registration__text {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .btn-registration__text {
+    font-size: 24px;
+    margin: 0 19px 0 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .btn-registration__text {
+    font-size: 22px;
+    margin: 0 17px 0 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .btn-registration__text {
+    font-size: 20px;
+    margin: 0 15px 0 0;
+  }
+}
+.btn-registration__arrow {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn-registration__arrow svg {
+  width: 40px;
+  height: 21px;
+  fill: var(--color-1);
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 1332px) {
+  .btn-registration__arrow svg {
+    width: 38px;
+    height: 19.95px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .btn-registration__arrow svg {
+    width: 36px;
+    height: 18.9px;
+  }
+}
+@media (max-width: 768.98px) {
+  .btn-registration__arrow svg {
+    width: 33px;
+    height: 17.325px;
+  }
+}
+@media (max-width: 480.98px) {
+  .btn-registration__arrow svg {
+    width: 30px;
+    height: 15.75px;
+  }
+}
+
+h1 {
+  font-family: Playfair;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 1332px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 1024.98px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768.98px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+@media (max-width: 480.98px) {
+  h1 {
+    font-size: 48px;
+    letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: Playfair;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 1332px) {
+  h2 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 1024.98px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768.98px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 480.98px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 370px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-family: Playfair;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 1332px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1024.98px) {
+  h3 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 768.98px) {
+  h3 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 480.98px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+@media (max-width: 1024.98px) {
+  h4 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768.98px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480.98px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+
+.form-block {
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .form-block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024.98px) {
+  .form-block {
+    padding: 30px;
+  }
+}
+@media (max-width: 768.98px) {
+  .form-block {
+    padding: 25px;
+  }
+}
+@media (max-width: 480.98px) {
+  .form-block {
+    padding: 20px;
+  }
+}
+.form-block__content {
+  z-index: 1;
+  flex: 0 1 50%;
+  margin: 0 17px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-block__title {
+  color: var(--color-1);
+  line-height: 130%;
+}
+.form-block__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.form-block__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form-block__form {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0 17px;
+}
+@media (max-width: 1200px) {
+  .form-block__form {
+    margin: 0;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 609px;
+}
+.form__top-text {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-3);
+}
+@media (max-width: 768.98px) {
+  .form__top-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480.98px) {
+  .form__top-text {
+    font-size: 14px;
+  }
+}
+.form__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .form__row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.form__item {
+  flex: 1 1 100%;
+  margin: 0 16px 20px 0;
+  max-width: 400px;
+}
+@media (max-width: 600px) {
+  .form__item {
+    max-width: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+.form__input {
+  width: 100%;
+  height: 48px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 12px;
+  background-color: var(--color-3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-1);
+}
+.form__input::placeholder {
+  color: var(--color-2);
+}
+.form__btn {
+  flex: 0 0 220px;
+  width: 220px;
+  margin: 0 0 20px 0;
+  height: 48px;
+  font-weight: 400;
+}
+@media (max-width: 600px) {
+  .form__btn {
+    flex: auto;
+    width: 100%;
+  }
+}
+.form__bottom-text {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #7F6E5F;
+}
+.checkbox__item:not(:last-child) {
+  margin: 0 0 5.2px 0;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked + .checkbox__label::after {
+  display: block;
+}
+.checkbox__label {
+  width: 100%;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  color: var(--color-2);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.checkbox__label::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--color-2);
+}
+.checkbox__label::after {
+  display: none;
+  position: absolute;
+  content: "";
+  left: 0;
+  align-self: flex-start;
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/check.svg") center no-repeat;
+  background-color: #A08266;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ibg img {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.main-header {
+  padding: 14px 0 14px 0;
+  background-color: var(--color-3);
+}
+.main-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header__logo {
+  flex: 0 0 180px;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 1024.98px) {
+  .main-header__logo {
+    flex: 1 1 100%;
+    margin: 0 30px 0 0;
+    order: 1;
+  }
+}
+@media (max-width: 1024.98px) {
+  .main-header__menu {
+    display: none;
+  }
+}
+.main-header__communication {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024.98px) {
+  .main-header__communication {
+    order: 2;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-header__communication {
+    display: none;
+  }
+}
+.main-header__call {
+  display: flex;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  position: relative;
+  z-index: 5;
+}
+.main-header__call:not(:last-child) {
+  margin: 0 30px 0 0;
+}
+.main-header__call img {
+  max-width: 100%;
+}
+@media (min-width: 1024.98px) {
+  .main-header__call:hover {
+    transform: rotate(360deg) scale(0.975);
+  }
+}
+@media (max-width: 1332px) {
+  .main-header__call:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .main-header__call:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+}
+.main-header__btn {
+  padding: 0 30px;
+  position: relative;
+  z-index: 5;
+}
+.main-header__burger {
+  display: none;
+}
+@media (max-width: 1024.98px) {
+  .main-header__burger {
+    order: 3;
+    display: block;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    background-color: transparent;
+    position: relative;
+    margin: 0 0 0 30px;
+  }
+  .main-header__burger span {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: 8px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-1);
+  }
+  .main-header__burger span:first-child {
+    top: 0px;
+  }
+  .main-header__burger span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+  .main-header__burger.active span {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  .main-header__burger.active span:first-child {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  .main-header__burger.active span:last-child {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 8px;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-header__burger {
+    order: 2;
+  }
+}
+
+.menu-main-header__list {
+  display: flex;
+}
+@media (max-width: 1024.98px) {
+  .menu-main-header__list {
+    flex-direction: column;
+  }
+}
+.menu-main-header__item {
+  margin: 0 30px;
+  overflow: hidden;
+}
+@media (max-width: 1332px) {
+  .menu-main-header__item {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .menu-main-header__item {
+    margin: 0 0 20px 0;
+  }
+}
+.menu-main-header__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  white-space: nowrap;
+}
+.menu-main-header__link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: -1px;
+  left: -110%;
+  height: 1.5px;
+  background-color: var(--color-2);
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+@media (min-width: 1024.98px) {
+  .menu-main-header__link:hover::before {
+    left: 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .menu-main-header__link {
+    font-size: 18px;
+  }
+}
+
+.mob-header {
+  position: fixed;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-3);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 4;
+  padding: 79px 0 0 0;
+}
+@media (max-width: 1024.98px) {
+  .mob-header.active {
+    left: 0;
+  }
+}
+.mob-header__top {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 480.98px) {
+  .mob-header__top .main-header__communication {
+    display: flex;
+  }
+  .mob-header__top:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .mob-header__body .menu-main-header {
+    display: block;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: var(--color-4);
+}
+.footer__row {
+  padding: 0 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1332px) {
+  .footer__row {
+    padding: 0 0 0 55px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .footer__row {
+    padding: 0 0 0 58px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768.98px) {
+  .footer__row {
+    padding: 0 0 0 50px;
+  }
+}
+@media (max-width: 480.98px) {
+  .footer__row {
+    padding: 0;
+    align-items: flex-start;
+  }
+}
+.footer__logo {
+  flex: 0 0 144px;
+}
+@media (max-width: 1024.98px) {
+  .footer__logo {
+    flex: 0 0 63px;
+  }
+}
+@media (max-width: 650px) {
+  .footer__menu {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .footer__menu {
+    margin: 0;
+  }
+}
+.footer__copyright {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: var(--color-1);
+}
+@media (max-width: 1024.98px) {
+  .footer__copyright {
+    margin: 25px 0 0 0;
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 650px) {
+  .footer__copyright {
+    text-align: center;
+  }
+}
+@media (max-width: 480.98px) {
+  .footer__copyright {
+    font-size: 13px;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 1024.98px) {
+  .menu-footer {
+    flex: 1 1 calc(100% - 63px);
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 650px) {
+  .menu-footer {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 480.98px) {
+  .menu-footer {
+    flex: 1 1 calc(100% - 63px);
+  }
+}
+.menu-footer__list {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024.98px) {
+  .menu-footer__list {
+    transform: translate(-63px, 0);
+  }
+}
+@media (max-width: 768.98px) {
+  .menu-footer__list {
+    transform: translate(0);
+  }
+}
+@media (max-width: 480.98px) {
+  .menu-footer__list {
+    flex-direction: column;
+    transform: translate(-31.5px, 0);
+  }
+}
+.menu-footer__item {
+  margin: 0 30px;
+  overflow: hidden;
+}
+@media (max-width: 1332px) {
+  .menu-footer__item {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 480.98px) {
+  .menu-footer__item {
+    margin: 0 0 15px 0;
+  }
+}
+.menu-footer__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: var(--color-1);
+  position: relative;
+}
+.menu-footer__link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: -1px;
+  left: -110%;
+  height: 1.5px;
+  background-color: var(--color-1);
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+@media (min-width: 1024.98px) {
+  .menu-footer__link:hover::before {
+    left: 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .menu-footer__link {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+.depilatornia {
+  padding: 114px 0 0 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia {
+    padding: 106.5px 0 0 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia {
+    padding: 99px 0 0 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia {
+    padding: 91.5px 0 0 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia {
+    padding: 84px 0 0 0;
+  }
+}
+.depilatornia__main:not(:last-child) {
+  margin: 0 0 60px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__main:not(:last-child) {
+    margin: 0 0 55px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__main:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__main:not(:last-child) {
+    margin: 0 0 45px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__main:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+@media (max-width: 370px) {
+  .depilatornia__about {
+    margin: 0 0 15px 0;
+  }
+}
+.depilatornia__advantages:not(:last-child) {
+  margin: 0 0 60px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__advantages:not(:last-child) {
+    margin: 0 0 55px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__advantages:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__advantages:not(:last-child) {
+    margin: 0 0 45px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__advantages:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+.depilatornia__study:not(:last-child) {
+  margin: 0 0 100px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__study:not(:last-child) {
+    margin: 0 0 90px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__study:not(:last-child) {
+    margin: 0 0 80px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__study:not(:last-child) {
+    margin: 0 0 70px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__study:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+.depilatornia__price:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__price:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__price:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+.depilatornia__certificate:not(:last-child) {
+  margin: 0 0 150px 0;
+}
+.depilatornia__discounts:not(:last-child) {
+  margin: 0 0 162px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__discounts:not(:last-child) {
+    margin: 0 0 135px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__discounts:not(:last-child) {
+    margin: 0 0 110px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__discounts:not(:last-child) {
+    margin: 0 0 85px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__discounts:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+.depilatornia__reviews:not(:last-child) {
+  margin: 0 0 100px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__reviews:not(:last-child) {
+    margin: 0 0 90px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__reviews:not(:last-child) {
+    margin: 0 0 80px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__reviews:not(:last-child) {
+    margin: 0 0 70px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__reviews:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+.depilatornia__difference:not(:last-child) {
+  margin: 0 0 100px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__difference:not(:last-child) {
+    margin: 0 0 90px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__difference:not(:last-child) {
+    margin: 0 0 80px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__difference:not(:last-child) {
+    margin: 0 0 70px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__difference:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+.depilatornia__faqs:not(:last-child) {
+  margin: 0 0 100px 0;
+}
+@media (max-width: 1332px) {
+  .depilatornia__faqs:not(:last-child) {
+    margin: 0 0 90px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .depilatornia__faqs:not(:last-child) {
+    margin: 0 0 80px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .depilatornia__faqs:not(:last-child) {
+    margin: 0 0 70px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .depilatornia__faqs:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+.main-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__row {
+    flex-direction: column;
+  }
+}
+.main-depilatornia__column {
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__column_content {
+    margin: 0 0 30px 0;
+  }
+}
+.main-depilatornia__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 58px 0 60px;
+}
+@media (max-width: 1332px) {
+  .main-depilatornia__content {
+    padding: 0 28px 0 30px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__content {
+    padding: 0 15px;
+  }
+}
+.main-depilatornia__content-info {
+  flex: 1 1 100%;
+}
+.main-depilatornia__content-info:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.main-depilatornia__subtitle {
+  width: 100%;
+  text-align: right;
+  color: var(--color-1);
+}
+.main-depilatornia__subtitle:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__subtitle:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .main-depilatornia__subtitle:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-depilatornia__subtitle:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+.main-depilatornia__title {
+  color: var(--color-4);
+  text-transform: uppercase;
+}
+.main-depilatornia__title:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__title:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .main-depilatornia__title:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-depilatornia__title:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+.main-depilatornia__image-block {
+  position: relative;
+  border-radius: 6px 0 0 6px;
+  overflow: hidden;
+  min-height: 535px;
+}
+@media (max-width: 1024.98px) {
+  .main-depilatornia__image-block {
+    min-height: 0;
+    padding: 0 0 60% 0;
+    border-radius: 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .main-depilatornia__image-block {
+    padding: 0 0 67.5% 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-depilatornia__image-block {
+    padding: 0 0 75% 0;
+  }
+}
+.main-depilatornia__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info-main-depilatornia__title {
+  font-family: Playfair;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-4);
+}
+.info-main-depilatornia__title:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+@media (max-width: 768.98px) {
+  .info-main-depilatornia__title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 480.98px) {
+  .info-main-depilatornia__title {
+    font-size: 18px;
+  }
+  .info-main-depilatornia__title:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+.info-main-depilatornia__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+  padding: 0 0 0 21px;
+}
+.info-main-depilatornia__item::before {
+  position: absolute;
+  content: "";
+  flex: 0 0 6px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-4);
+}
+.info-main-depilatornia__item:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+@media (max-width: 480.98px) {
+  .info-main-depilatornia__item {
+    font-size: 13px;
+  }
+}
+
+.services-depilatornia {
+  background-color: var(--color-1);
+  padding: 60px 0 96px 0;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1332px) {
+  .services-depilatornia {
+    padding: 55px 0 92px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .services-depilatornia {
+    padding: 50px 0 88px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .services-depilatornia {
+    padding: 45px 0 84px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .services-depilatornia {
+    padding: 40px 0 80px 0;
+  }
+}
+.services-depilatornia__title {
+  font-family: Playfair;
+  font-size: 106.36px;
+  font-weight: 500;
+  line-height: 119.9981195938%;
+  color: var(--color-3);
+  opacity: 0.2 !important;
+}
+.services-depilatornia__title:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1332px) {
+  .services-depilatornia__title {
+    font-size: 93px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .services-depilatornia__title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768.98px) {
+  .services-depilatornia__title {
+    font-size: 67px;
+  }
+}
+@media (max-width: 480.98px) {
+  .services-depilatornia__title {
+    font-size: 54px;
+  }
+  .services-depilatornia__title:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 370px) {
+  .services-depilatornia__title {
+    font-size: 50px;
+  }
+}
+.services-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 992.98px) {
+  .services-depilatornia__row {
+    flex-direction: column;
+  }
+}
+.services-depilatornia__column {
+  flex: 0 1 50%;
+  margin: 0 0 24px 0;
+  padding: 0 12px;
+}
+.item-services-depilatornia {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1332px) {
+  .item-services-depilatornia {
+    min-height: 330px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-services-depilatornia {
+    min-height: 320px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-services-depilatornia {
+    min-height: 310px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-services-depilatornia {
+    min-height: 300px;
+  }
+}
+.item-services-depilatornia__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.item-services-depilatornia__body {
+  flex: 1 1 100%;
+  position: relative;
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 1332px) {
+  .item-services-depilatornia__body {
+    padding: 24px 36px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-services-depilatornia__body {
+    padding: 24px 32px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-services-depilatornia__body {
+    padding: 24px 28px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-services-depilatornia__body {
+    padding: 24px;
+  }
+}
+.item-services-depilatornia__content {
+  width: 100%;
+  flex: 1 1 100%;
+}
+.item-services-depilatornia__content:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.item-services-depilatornia__title {
+  display: flex;
+  flex-direction: column;
+  font-family: Playfair;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--color-3);
+}
+.item-services-depilatornia__title:not(:last-child) {
+  margin: 0 0 36px 0;
+}
+.item-services-depilatornia__title span:nth-child(2) {
+  padding: 0 0 0 115px;
+  margin: -14px 0 0 0;
+}
+@media (max-width: 1332px) {
+  .item-services-depilatornia__title {
+    font-size: 30px;
+  }
+  .item-services-depilatornia__title:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+  .item-services-depilatornia__title span:nth-child(2) {
+    padding: 0 0 0 106.25px;
+    margin: -13px 0 0 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-services-depilatornia__title {
+    font-size: 28px;
+  }
+  .item-services-depilatornia__title:not(:last-child) {
+    margin: 0 0 28px 0;
+  }
+  .item-services-depilatornia__title span:nth-child(2) {
+    padding: 0 0 0 97.5px;
+    margin: -12px 0 0 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-services-depilatornia__title {
+    font-size: 26px;
+  }
+  .item-services-depilatornia__title:not(:last-child) {
+    margin: 0 0 26px 0;
+  }
+  .item-services-depilatornia__title span:nth-child(2) {
+    padding: 0 0 0 88.75px;
+    margin: -11px 0 0 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-services-depilatornia__title {
+    font-size: 24px;
+  }
+  .item-services-depilatornia__title:not(:last-child) {
+    margin: 0 0 24px 0;
+  }
+  .item-services-depilatornia__title span:nth-child(2) {
+    padding: 0 0 0 80px;
+    margin: -10px 0 0 0;
+  }
+}
+.item-services-depilatornia__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-3);
+  padding: 0 0 0 16px;
+}
+.item-services-depilatornia__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.item-services-depilatornia__item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  flex: 0 0 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-3);
+}
+@media (max-width: 480.98px) {
+  .item-services-depilatornia__item {
+    font-size: 15px;
+  }
+  .item-services-depilatornia__item:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+}
+.item-services-depilatornia__btn {
+  flex: 0 0 40px;
+  padding: 0 30px;
+}
+
+.about-depilatornia {
+  position: relative;
+}
+.about-depilatornia::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.about-depilatornia__container {
+  position: relative;
+  z-index: 1;
+}
+.about-depilatornia__form-block {
+  margin: -60px 0 20px 0;
+  background: url("../img/form/bg-1.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 1200px) {
+  .about-depilatornia__form-block .form-block__title {
+    max-width: 420px;
+  }
+}
+.about-depilatornia__form-block .form__top-text:not(:last-child) {
+  margin: 0 0 26px 0;
+}
+.about-depilatornia__form-block .form-block__form {
+  transform: translate(0, -4.5px);
+}
+@media (max-width: 1200px) {
+  .about-depilatornia__form-block .form-block__content {
+    margin: 0 0 30px 0;
+  }
+}
+@media (min-width: 1024.98px) {
+  .about-depilatornia__form-block {
+    padding: 40px 29px 40px 40px;
+  }
+}
+.about-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 992.98px) {
+  .about-depilatornia__row {
+    flex-direction: column;
+  }
+}
+.about-depilatornia__column {
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+.about-depilatornia__column_main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 992.98px) {
+  .about-depilatornia__column_main {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .about-depilatornia__column_main {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .about-depilatornia__column_main {
+    margin: 0 0 20px 0;
+  }
+}
+.about-depilatornia__title {
+  flex: 1 1 100%;
+}
+.about-depilatornia__title:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1024.98px) {
+  .about-depilatornia__title:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .about-depilatornia__title:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .about-depilatornia__title:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+.about-depilatornia__text {
+  max-width: 536px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-1);
+}
+@media (max-width: 1200px) {
+  .about-depilatornia__text {
+    max-width: none;
+    padding: 0 30px 0 0;
+  }
+}
+@media (max-width: 992.98px) {
+  .about-depilatornia__text {
+    padding: 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .about-depilatornia__text {
+    font-size: 13px;
+  }
+}
+.info-about-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 370px) {
+  .info-about-depilatornia__row {
+    flex-wrap: wrap;
+  }
+}
+.info-about-depilatornia__column {
+  padding: 0 12px;
+  flex: 0 1 50%;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 370px) {
+  .info-about-depilatornia__column {
+    flex: 1 1 100%;
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 370px) {
+  .item-info-about-depilatornia {
+    text-align: center;
+  }
+}
+.item-info-about-depilatornia__number {
+  font-family: Playfair;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #000;
+}
+.item-info-about-depilatornia__number:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+@media (max-width: 480.98px) {
+  .item-info-about-depilatornia__number {
+    font-size: 46px;
+  }
+  .item-info-about-depilatornia__number:not(:last-child) {
+    margin: 0 0 12px 0;
+  }
+}
+.item-info-about-depilatornia__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 16px 0 0 0;
+  border-top: 1px solid var(--color-4);
+  color: var(--color-4);
+}
+@media (max-width: 480.98px) {
+  .item-info-about-depilatornia__text {
+    font-size: 15px;
+    padding: 12px 0 0 0;
+  }
+}
+
+.advantages-depilatornia {
+  padding: 60px 0 20px 0;
+}
+@media (max-width: 1332px) {
+  .advantages-depilatornia {
+    padding: 55px 0 15px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .advantages-depilatornia {
+    padding: 50px 0 10px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .advantages-depilatornia {
+    padding: 45px 0 5px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia {
+    padding: 40px 0 5px 0;
+  }
+}
+.advantages-depilatornia__row {
+  display: flex;
+  margin: 0 -13px;
+}
+@media (max-width: 992.98px) {
+  .advantages-depilatornia__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.advantages-depilatornia__column {
+  flex: 0 1 33.333%;
+  padding: 0 13px;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 992.98px) {
+  .advantages-depilatornia__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 768.98px) {
+  .advantages-depilatornia__column {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia__column {
+    margin: 0 0 35px 0;
+  }
+}
+.advantages-depilatornia__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 992.98px) {
+  .advantages-depilatornia__item {
+    align-items: center;
+    text-align: center;
+  }
+}
+.advantages-depilatornia__icon {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+}
+.advantages-depilatornia__icon:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.advantages-depilatornia__icon img {
+  max-width: 100%;
+}
+@media (max-width: 768.98px) {
+  .advantages-depilatornia__icon {
+    flex: 0 0 55px;
+    width: 55px;
+    height: 55px;
+  }
+  .advantages-depilatornia__icon:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia__icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+  }
+  .advantages-depilatornia__icon:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+.advantages-depilatornia__title {
+  text-transform: uppercase;
+  font-family: Playfair;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-4);
+}
+.advantages-depilatornia__title:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1332px) {
+  .advantages-depilatornia__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .advantages-depilatornia__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768.98px) {
+  .advantages-depilatornia__title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia__title {
+    font-size: 20px;
+  }
+  .advantages-depilatornia__title:not(:last-child) {
+    margin: 0 0 15px 0;
+  }
+}
+.advantages-depilatornia__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia__text {
+    font-size: 13px;
+  }
+}
+
+.study-depilatornia {
+  padding: 30px 0 0 0;
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia {
+    padding: 0;
+  }
+}
+.study-depilatornia__body {
+  padding: 40px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__body {
+    padding: 30px;
+  }
+}
+@media (max-width: 768.98px) {
+  .study-depilatornia__body {
+    padding: 25px;
+  }
+}
+@media (max-width: 480.98px) {
+  .study-depilatornia__body {
+    padding: 20px;
+  }
+}
+.study-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__row {
+    flex-direction: column;
+  }
+}
+.study-depilatornia__column {
+  padding: 0 12px;
+}
+.study-depilatornia__column_main {
+  flex: 0 0 633px;
+}
+@media (max-width: 1150px) {
+  .study-depilatornia__column_main {
+    flex: 0 0 600px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__column_main {
+    flex: auto;
+    margin: 0 0 40px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .study-depilatornia__column_main {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .study-depilatornia__column_main {
+    margin: 0 0 30px 0;
+  }
+}
+.study-depilatornia__column_image {
+  flex: 1 1 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.study-depilatornia__title {
+  line-height: 130%;
+  color: var(--color-1);
+}
+.study-depilatornia__title:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__title:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .study-depilatornia__title:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .study-depilatornia__title:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__form .form__row {
+    justify-content: flex-start;
+  }
+}
+.study-depilatornia__image {
+  position: absolute;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #D9D9D9;
+  height: calc(100% + 90px);
+  min-width: 280px;
+  width: 43.874%;
+  top: 0;
+  transform: translate(-104px, -70px);
+}
+.study-depilatornia__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1332px) {
+  .study-depilatornia__image {
+    transform: translate(-44px, -70px);
+  }
+}
+@media (max-width: 1150px) {
+  .study-depilatornia__image {
+    transform: translate(0px, -70px);
+  }
+}
+@media (max-width: 1024.98px) {
+  .study-depilatornia__image {
+    position: relative;
+    transform: translate(0, 0);
+    width: 100%;
+    min-width: 0;
+    padding: 0 0 60% 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .study-depilatornia__image {
+    padding: 0 0 70% 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .study-depilatornia__image {
+    padding: 0 0 80% 0;
+  }
+}
+
+.price-depilatornia__top:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 768.98px) {
+  .price-depilatornia__top:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__top:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+.price-depilatornia__filter-block {
+  overflow: hidden;
+  display: none;
+}
+.price-depilatornia__filter-block.active {
+  display: block;
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value {
+  margin: 0 5px 0 0;
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value:first-child {
+  margin: 0 0 0 3px;
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value {
+    margin: 0 4px 0 0;
+  }
+  .price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value:first-child {
+    margin: 0 0 0 4px;
+  }
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value_opacity {
+  min-width: 49px;
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value_opacity:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value_opacity {
+    min-width: 42px;
+  }
+  .price-depilatornia__filter-block_man .item-price-depilatornia_image .item-price-depilatornia__value_opacity:not(:last-child) {
+    margin: 0 12px 0 0;
+  }
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value {
+  min-width: 80px;
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value:not(:last-child) {
+  margin: 0 0px 0 0;
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value {
+    min-width: 54px;
+    margin: 0 3px 0 0;
+  }
+  .price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value:not(:last-child) {
+    margin: 0 3px 0 0;
+  }
+}
+.price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value_opacity {
+  min-width: 49px;
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__filter-block_man .item-price-depilatornia_twarz .item-price-depilatornia__value_opacity {
+    min-width: 42px;
+    margin: 0 0 0 0;
+  }
+}
+.price-depilatornia__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.price-depilatornia__row:not(:last-child) {
+  margin: 0 -12px 30px -12px;
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__row {
+    width: 100%;
+    margin: 0;
+  }
+  .price-depilatornia__row:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+.price-depilatornia__column {
+  padding: 0 12px;
+  margin: 0 0 30px 0;
+}
+.price-depilatornia__column_small {
+  flex: 0 0 33.333%;
+}
+@media (max-width: 1400px) {
+  .price-depilatornia__column_small {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 925px) {
+  .price-depilatornia__column_small {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 1400px) {
+  .price-depilatornia__column_small-big {
+    flex: 1 1 100%;
+  }
+}
+.price-depilatornia__column_medium {
+  flex: 0 0 50%;
+}
+@media (max-width: 925px) {
+  .price-depilatornia__column_medium {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 1400px) {
+  .price-depilatornia__column_medium-big {
+    flex: 1 1 100%;
+  }
+}
+.price-depilatornia__column_big {
+  flex: 0 0 66.667%;
+}
+@media (max-width: 1400px) {
+  .price-depilatornia__column_big {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 650px) {
+  .price-depilatornia__column_big {
+    overflow-x: auto;
+  }
+}
+@media (max-width: 768.98px) {
+  .price-depilatornia__column {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .price-depilatornia__column {
+    margin: 0 0 20px 0;
+    overflow-x: auto;
+    padding: 0;
+  }
+}
+.top-price-depilatornia {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 -12px;
+}
+@media (max-width: 1024.98px) {
+  .top-price-depilatornia {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.top-price-depilatornia__column {
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+@media (max-width: 1024.98px) {
+  .top-price-depilatornia__column {
+    width: 100%;
+  }
+  .top-price-depilatornia__column:first-child {
+    margin: 0 0 30px 0;
+  }
+}
+.top-price-depilatornia__title {
+  color: var(--color-1);
+}
+.filter-top-price-depilatornia {
+  display: flex;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 0 11px 0;
+  position: relative;
+}
+.filter-top-price-depilatornia::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 1px;
+  bottom: 1px;
+  background-color: var(--color-4);
+  left: 0%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.filter-top-price-depilatornia.left::before {
+  left: 0;
+}
+.filter-top-price-depilatornia.right::before {
+  left: 50%;
+}
+.filter-top-price-depilatornia__btn {
+  flex: 0 1 50%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: var(--color-2);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 0 10px;
+}
+@media (min-width: 1024.98px) {
+  .filter-top-price-depilatornia__btn:hover {
+    color: var(--color-4);
+  }
+}
+.filter-top-price-depilatornia__btn.active {
+  font-weight: 600;
+  color: var(--color-4);
+}
+@media (max-width: 480.98px) {
+  .filter-top-price-depilatornia__btn {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 370px) {
+  .filter-top-price-depilatornia__btn {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.item-price-depilatornia {
+  border-radius: 6px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-price-depilatornia_image {
+  flex-direction: row;
+}
+.item-price-depilatornia_big .item-price-depilatornia__value {
+  min-width: 68px;
+}
+.item-price-depilatornia_big .item-price-depilatornia__value:first-child {
+  margin: 0 0 0 10px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_big .item-price-depilatornia__value {
+    min-width: 58px;
+  }
+  .item-price-depilatornia_big .item-price-depilatornia__value:first-child {
+    margin: 0 0 0 6px;
+  }
+}
+.item-price-depilatornia_big .item-price-depilatornia__value_opacity {
+  min-width: 67px;
+}
+.item-price-depilatornia_big .item-price-depilatornia__value_opacity:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_big .item-price-depilatornia__value_opacity {
+    min-width: 57px;
+  }
+}
+.item-price-depilatornia_big .item-price-depilatornia__value_opacity:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+.item-price-depilatornia_brwi .item-price-depilatornia__value {
+  min-width: 45px;
+}
+.item-price-depilatornia_brwi .item-price-depilatornia__value:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_brwi .item-price-depilatornia__value {
+    min-width: 38.5px;
+  }
+  .item-price-depilatornia_brwi .item-price-depilatornia__value:not(:last-child) {
+    margin: 0 6px 0 0;
+  }
+}
+.item-price-depilatornia_brwi .item-price-depilatornia__value_opacity {
+  min-width: 68px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_brwi .item-price-depilatornia__value_opacity {
+    min-width: 58px;
+  }
+}
+.item-price-depilatornia_twarz .item-price-depilatornia__value {
+  min-width: 74px;
+}
+.item-price-depilatornia_twarz .item-price-depilatornia__value:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_twarz .item-price-depilatornia__value {
+    min-width: 54px;
+    margin: 0 3px 0 0;
+  }
+  .item-price-depilatornia_twarz .item-price-depilatornia__value:not(:last-child) {
+    margin: 0 3px 0 0;
+  }
+}
+.item-price-depilatornia_twarz .item-price-depilatornia__value_opacity {
+  min-width: 49px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_twarz .item-price-depilatornia__value_opacity {
+    min-width: 42px;
+    margin: 0 0 0 0;
+  }
+}
+.item-price-depilatornia_bikini .item-price-depilatornia__value {
+  min-width: 68px;
+}
+.item-price-depilatornia_bikini .item-price-depilatornia__value:first-child {
+  margin: 0 0 0 16px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_bikini .item-price-depilatornia__value {
+    min-width: 52px;
+  }
+  .item-price-depilatornia_bikini .item-price-depilatornia__value:first-child {
+    margin: 0 0 0 6px;
+  }
+}
+.item-price-depilatornia_bikini .item-price-depilatornia__value_opacity {
+  min-width: 49px;
+  margin: 0 10px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_bikini .item-price-depilatornia__value_opacity {
+    min-width: 42px;
+    margin: 0 7px;
+  }
+}
+.item-price-depilatornia__image {
+  margin: 10px;
+  flex: 0 0 120px;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-price-depilatornia__image img {
+  max-width: 100%;
+}
+@media (max-width: 768.98px) {
+  .item-price-depilatornia__image {
+    margin: 10px 5px 10px 10px;
+  }
+}
+.item-price-depilatornia_4 .item-price-depilatornia__value {
+  min-width: 50px;
+}
+.item-price-depilatornia_4 .item-price-depilatornia__value:first-child {
+  margin: 0 0 0 6px;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_4 .item-price-depilatornia__value {
+    min-width: 43px;
+  }
+  .item-price-depilatornia_4 .item-price-depilatornia__value:first-child {
+    margin: 0 0 0 4px;
+  }
+}
+.item-price-depilatornia_4 .item-price-depilatornia__value_opacity {
+  min-width: 49px;
+}
+.item-price-depilatornia_4 .item-price-depilatornia__value_opacity:not(:last-child) {
+  margin: 0 16px 0 0;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia_4 .item-price-depilatornia__value_opacity {
+    min-width: 42px;
+  }
+  .item-price-depilatornia_4 .item-price-depilatornia__value_opacity:not(:last-child) {
+    margin: 0 12px 0 0;
+  }
+}
+.item-price-depilatornia__content {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-price-depilatornia__row {
+  display: flex;
+  justify-content: space-between;
+}
+.item-price-depilatornia__row:first-child .item-price-depilatornia__column_main {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.item-price-depilatornia__row:first-child .item-price-depilatornia__column_bg {
+  border-radius: 6px 6px 0 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.item-price-depilatornia__row:last-child {
+  flex: 1 1 100%;
+}
+.item-price-depilatornia__row:last-child .item-price-depilatornia__column_main {
+  padding-bottom: 20px;
+  align-items: flex-start;
+}
+.item-price-depilatornia__row:last-child .item-price-depilatornia__column_bg {
+  border-radius: 0 0 6px 6px;
+  padding-bottom: 20px;
+  align-items: flex-start;
+}
+.item-price-depilatornia__column {
+  display: flex;
+  align-items: center;
+}
+.item-price-depilatornia__column_main {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1 1 100%;
+  padding-bottom: 12px;
+  min-width: 159px;
+}
+@media (max-width: 370px) {
+  .item-price-depilatornia__column_main {
+    min-width: 160px;
+  }
+}
+.item-price-depilatornia__column_bg {
+  background-color: var(--color-4);
+  padding-bottom: 12px;
+}
+.item-price-depilatornia__icon {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  margin: 0 20px 0 0;
+  background-color: #F8F8F8;
+}
+.item-price-depilatornia__icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia__icon {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+    margin: 0 12px 0 0;
+  }
+  .item-price-depilatornia__icon img {
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
+.item-price-depilatornia__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--color-4);
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia__title {
+    font-size: 16px;
+  }
+}
+.item-price-depilatornia__name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+}
+.item-price-depilatornia__name br {
+  display: none;
+}
+@media (max-width: 1600px) {
+  .item-price-depilatornia__name br {
+    display: block;
+  }
+}
+@media (max-width: 1332px) {
+  .item-price-depilatornia__name br {
+    display: none;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia__name {
+    font-size: 12px;
+  }
+  .item-price-depilatornia__name br {
+    display: block;
+  }
+}
+.item-price-depilatornia__value {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-3);
+  white-space: nowrap;
+}
+.item-price-depilatornia__value_opacity {
+  opacity: 0.7;
+}
+@media (max-width: 480.98px) {
+  .item-price-depilatornia__value {
+    font-size: 12px;
+  }
+}
+
+.certificate-depilatornia__form-block {
+  background: url("../img/form/bg-2.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding: 37px 28px 30px 40px;
+}
+@media (max-width: 1200px) {
+  .certificate-depilatornia__form-block {
+    padding: 37px 28px 100px 40px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .certificate-depilatornia__form-block {
+    padding: 30px 30px 100px 30px;
+  }
+}
+@media (max-width: 768.98px) {
+  .certificate-depilatornia__form-block {
+    padding: 25px 25px 100px 25px;
+  }
+}
+@media (max-width: 480.98px) {
+  .certificate-depilatornia__form-block {
+    padding: 20px 20px 100px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .certificate-depilatornia__form-block {
+    padding: 20px 20px 80px 20px;
+  }
+}
+@media (max-width: 350px) {
+  .certificate-depilatornia__form-block {
+    padding: 20px 20px 40px 20px;
+  }
+}
+.certificate-depilatornia__form-block .form-block__title {
+  color: var(--color-3);
+}
+@media (min-width: 1200px) {
+  .certificate-depilatornia__form-block .form-block__title {
+    margin: 3px 0 0 0;
+    max-width: 384px;
+  }
+}
+.certificate-depilatornia__form-block .form-block__image {
+  width: 100%;
+  max-width: 384px;
+  height: 184px;
+  position: absolute;
+  bottom: -98px;
+}
+@media (max-width: 480.98px) {
+  .certificate-depilatornia__form-block .form-block__image {
+    max-width: calc(100% - 40px);
+  }
+}
+@media (max-width: 400px) {
+  .certificate-depilatornia__form-block .form-block__image {
+    height: 164px;
+  }
+}
+@media (max-width: 350px) {
+  .certificate-depilatornia__form-block .form-block__image {
+    height: 124px;
+  }
+}
+.certificate-depilatornia__form-block .form__top-text:not(:last-child) {
+  margin: 0 0 51px 0;
+}
+@media (max-width: 1200px) {
+  .certificate-depilatornia__form-block .form__top-text:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+.certificate-depilatornia__form-block .form-block__form {
+  transform: translate(0, -4.5px);
+}
+.certificate-depilatornia__form-block .form-block__content {
+  justify-content: flex-start;
+}
+@media (max-width: 1200px) {
+  .certificate-depilatornia__form-block .form-block__content {
+    margin: 0 0 30px 0;
+  }
+}
+
+.discounts-depilatornia__slider .slider__slide {
+  opacity: 0.3;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.discounts-depilatornia__slider .slider__slide.swiper-slide-active, .discounts-depilatornia__slider .slider__slide.swiper-slide-next, .discounts-depilatornia__slider .slider__slide.swiper-slide-next + .swiper-slide {
+  opacity: 1;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+@media (max-width: 1200px) {
+  .discounts-depilatornia__slider .slider__slide.swiper-slide-next + .swiper-slide {
+    opacity: 0.3;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+}
+@media (max-width: 600px) {
+  .discounts-depilatornia__slider .slider__slide.swiper-slide-next {
+    opacity: 0.3;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+}
+.item-discounts-depilatornia {
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 260px;
+  padding: 20px;
+}
+@media (max-width: 1024.98px) {
+  .item-discounts-depilatornia {
+    min-height: 240px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-discounts-depilatornia {
+    min-height: 220px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-discounts-depilatornia {
+    min-height: 200px;
+  }
+}
+.item-discounts-depilatornia_black {
+  background: url("../img/form/bg-3.jpg") center no-repeat;
+  background-size: cover;
+}
+.item-discounts-depilatornia_black .item-discounts-depilatornia__title {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_black .item-discounts-depilatornia__text {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_black .item-discounts-depilatornia__procent {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_brown {
+  background: url("../img/form/bg-4.jpg") center no-repeat;
+  background-size: cover;
+}
+.item-discounts-depilatornia_brown .item-discounts-depilatornia__title {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_brown .item-discounts-depilatornia__text {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_brown .item-discounts-depilatornia__procent {
+  color: var(--color-3);
+}
+.item-discounts-depilatornia_white {
+  background: url("../img/form/bg-5.jpg") center no-repeat;
+  background-size: cover;
+}
+.item-discounts-depilatornia_white .item-discounts-depilatornia__title {
+  color: var(--color-1);
+}
+.item-discounts-depilatornia_white .item-discounts-depilatornia__text {
+  color: var(--color-1);
+}
+.item-discounts-depilatornia_white .item-discounts-depilatornia__procent {
+  color: var(--color-1);
+}
+.item-discounts-depilatornia__title {
+  font-family: Playfair;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 1332px) {
+  .item-discounts-depilatornia__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-discounts-depilatornia__title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-discounts-depilatornia__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-discounts-depilatornia__title {
+    font-size: 18px;
+  }
+}
+.item-discounts-depilatornia__procent {
+  margin: 30px 0;
+  font-family: Playfair;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 1332px) {
+  .item-discounts-depilatornia__procent {
+    font-size: 41px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-discounts-depilatornia__procent {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-discounts-depilatornia__procent {
+    font-size: 31px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-discounts-depilatornia__procent {
+    font-size: 26px;
+  }
+}
+.item-discounts-depilatornia__text {
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 150%;
+}
+
+.slider__top:not(:last-child) {
+  margin: 0 0 60px 0;
+}
+@media (max-width: 1332px) {
+  .slider__top:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .slider__top:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .slider__top:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .slider__top:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+.slider__swiper.swiper {
+  overflow: visible;
+}
+.slider__slide.swiper-slide {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .slider__slide.swiper-slide {
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 1024.98px) {
+  .slider .navigations__pagination {
+    display: block;
+  }
+}
+
+.top-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-slider__title {
+  color: var(--color-1);
+  margin: 0 20px 0 0;
+}
+@media (max-width: 1024.98px) {
+  .top-slider__navigations.navigations {
+    display: none;
+  }
+}
+
+.navigations {
+  display: flex;
+  align-items: center;
+}
+.navigations__btn {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-4);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.navigations__btn svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-4);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 1024.98px) {
+  .navigations__btn:hover {
+    border: 1px solid #ac8561;
+  }
+  .navigations__btn:hover svg {
+    fill: #ac8561;
+  }
+}
+.navigations__btn.swiper-button-disabled {
+  border: 1px solid #C3C3C3;
+  pointer-events: none;
+}
+.navigations__btn.swiper-button-disabled svg {
+  fill: #C3C3C3;
+}
+.navigations__btn_prev svg {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.navigations__btn_next {
+  margin: 0 0 0 15px;
+}
+.navigations__pagination {
+  display: none;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.navigations__pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #C3C3C3;
+}
+.navigations__pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-4);
+}
+
+.item-reviews-depilatornia {
+  padding: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 250px;
+  border: 1px solid #B3A394;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1332px) {
+  .item-reviews-depilatornia {
+    padding: 29px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-reviews-depilatornia {
+    padding: 26px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-reviews-depilatornia {
+    padding: 23px;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-reviews-depilatornia {
+    padding: 20px;
+    min-height: 220px;
+  }
+}
+.item-reviews-depilatornia__qoute {
+  margin: 24px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-1);
+}
+@media (max-width: 480.98px) {
+  .item-reviews-depilatornia__qoute {
+    margin: 18px 0;
+    font-size: 13px;
+  }
+}
+.stars {
+  display: flex;
+  align-items: center;
+}
+.stars__item {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 19px;
+}
+.stars__item:not(:last-child) {
+  margin: 0 4px 0 0;
+}
+.stars__item img {
+  max-width: 100%;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+.person__image {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 20px 0 0;
+}
+.person__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 480.98px) {
+  .person__image {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+  }
+}
+.person__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.person__name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-1);
+}
+@media (max-width: 480.98px) {
+  .person__name {
+    font-size: 13px;
+  }
+}
+.person__position {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+}
+@media (max-width: 480.98px) {
+  .person__position {
+    font-size: 13px;
+  }
+}
+
+.difference-depilatornia {
+  padding: 60px 0 57px 0;
+  background-color: #fff;
+}
+@media (max-width: 1332px) {
+  .difference-depilatornia:not(:last-child) {
+    margin: 0 0 55px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .difference-depilatornia:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .difference-depilatornia:not(:last-child) {
+    margin: 0 0 45px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .difference-depilatornia {
+    padding: 40px 0;
+  }
+}
+.difference-depilatornia__top:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 768.98px) {
+  .difference-depilatornia__top:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .difference-depilatornia__top:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+.difference-depilatornia__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 1200px) {
+  .difference-depilatornia__row {
+    flex-direction: column;
+  }
+}
+.difference-depilatornia__column {
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+.difference-depilatornia__column:last-child .item-difference-depilatornia__content {
+  padding: 24px 24px 24px 11px;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  .difference-depilatornia__column:last-child .item-difference-depilatornia__content {
+    padding: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .difference-depilatornia__column:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .difference-depilatornia__column:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .difference-depilatornia__column:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+.top-difference-depilatornia__title {
+  text-align: center;
+  color: var(--color-1);
+}
+
+.item-difference-depilatornia {
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  background-color: var(--color-3);
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .item-difference-depilatornia {
+    flex-direction: column;
+  }
+}
+.item-difference-depilatornia__image {
+  flex: 0 0 37.165%;
+  min-width: 260px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.item-difference-depilatornia__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .item-difference-depilatornia__image {
+    order: 2;
+    padding: 0 0 70% 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-difference-depilatornia__image {
+    padding: 0 0 80% 0;
+  }
+}
+.item-difference-depilatornia__content {
+  flex: 1 1 100%;
+  padding: 24px 11px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .item-difference-depilatornia__content {
+    order: 1;
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .item-difference-depilatornia__content {
+    padding: 20px;
+  }
+}
+.item-difference-depilatornia__title {
+  color: var(--color-4);
+}
+.item-difference-depilatornia__title:not(:last-child) {
+  margin: 0 0 49px 0;
+}
+@media (max-width: 1332px) {
+  .item-difference-depilatornia__title:not(:last-child) {
+    margin: 0 0 45px 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  .item-difference-depilatornia__title:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-difference-depilatornia__title:not(:last-child) {
+    margin: 0 0 32.7px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-difference-depilatornia__title:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+.item-difference-depilatornia__elements {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+.item-difference-depilatornia__element:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.item-difference-depilatornia__element:first-child {
+  flex: 1 1 100%;
+}
+@media (max-width: 768.98px) {
+  .item-difference-depilatornia__element:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .item-difference-depilatornia__element:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.element-difference-depilatornia__title {
+  color: var(--color-1);
+}
+.element-difference-depilatornia__title:not(:last-child) {
+  margin: 0 0 14px 0;
+}
+.element-difference-depilatornia__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-2);
+}
+@media (max-width: 480.98px) {
+  .element-difference-depilatornia__text {
+    font-size: 13px;
+  }
+}
+
+.faqs__row {
+  display: flex;
+  margin: 0 -12px;
+}
+@media (max-width: 1024.98px) {
+  .faqs__row {
+    flex-direction: column;
+  }
+}
+.faqs__column {
+  padding: 0 12px;
+  flex: 0 1 50%;
+}
+@media (max-width: 1024.98px) {
+  .faqs__column:not(:last-child) {
+    margin: 0 0 40px 0;
+  }
+}
+.content-faqs {
+  max-width: 404px;
+}
+@media (max-width: 1024.98px) {
+  .content-faqs {
+    max-width: none;
+  }
+}
+.content-faqs__title {
+  color: var(--color-1);
+}
+.content-faqs__title:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1024.98px) {
+  .content-faqs__title:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .content-faqs__title:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .content-faqs__title:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+.content-faqs__text {
+  color: var(--color-1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.content-faqs__text:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1024.98px) {
+  .content-faqs__text:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .content-faqs__text:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .content-faqs__text {
+    font-size: 13px;
+  }
+  .content-faqs__text:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+.content-faqs__btn {
+  width: 220px;
+  height: 48px;
+  font-weight: 400;
+}
+
+.item-faqs {
+  border-bottom: 1px solid #DFDFDF;
+}
+.item-faqs:first-child {
+  border-top: 1px solid #DFDFDF;
+}
+.item-faqs__body {
+  display: none;
+}
+.item-faqs__text {
+  padding: 6px 24px 24px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-1);
+}
+.item-faqs__text p:not(:last-child) {
+  margin: 0 0 12px 0;
+}
+@media (max-width: 480.98px) {
+  .item-faqs__text {
+    padding: 6px 20px 20px 20px;
+    font-size: 13px;
+  }
+}
+
+.top-item-faqs {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.top-item-faqs.active .top-item-faqs__icon {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media (max-width: 480.98px) {
+  .top-item-faqs {
+    padding: 20px;
+  }
+}
+.top-item-faqs__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--color-1);
+  margin: 0 20px 0 0;
+}
+.top-item-faqs__icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.top-item-faqs__icon img {
+  max-width: 100%;
+}
+
+.contacts {
+  background-color: var(--color-1);
+}
+.contacts__row {
+  display: flex;
+}
+@media (max-width: 1024.98px) {
+  .contacts__row {
+    flex-wrap: wrap;
+  }
+}
+.contacts__title {
+  padding: 10px 0;
+}
+.contacts__title span {
+  writing-mode: vertical-rl !important;
+  transform: rotate(180deg);
+  font-family: Playfair;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: var(--color-3);
+  opacity: 0.2 !important;
+  text-align: center;
+}
+@media (max-width: 1024.98px) {
+  .contacts__title span {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__title span {
+    font-size: 54px;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__title span {
+    font-size: 48px;
+  }
+}
+.contacts__map {
+  flex: 0 0 35.48611%;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024.98px) {
+  .contacts__map {
+    width: calc(100% - 72px);
+    flex: auto;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__map {
+    width: calc(100% - 65px);
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__map {
+    width: calc(100% - 58px);
+  }
+}
+.contacts__content {
+  flex: 1 1 100%;
+  padding: 40px 60px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1024.98px) {
+  .contacts__content {
+    align-items: flex-start;
+    padding: 35px 30px 40px 72px;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__content {
+    padding: 30px 30px 35px 65px;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__content {
+    padding: 25px 30px 30px 58px;
+    padding: 25px 30px 30px 25px;
+  }
+}
+.contacts__body {
+  width: 100%;
+  max-width: 536px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts__links a {
+  color: #fff;
+}
+@media (min-width: 1024.98px) {
+  .contacts__links a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+}
+.contacts__links:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1024.98px) {
+  .contacts__links:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__links:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__links:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
+.contacts__link:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1024.98px) {
+  .contacts__link:not(:last-child) {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__link:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__link:not(:last-child) {
+    margin: 0 0 25px 0;
+  }
+}
+.contacts__link_time {
+  align-items: flex-start;
+}
+.contacts__link_address {
+  align-items: flex-start;
+}
+.contacts__link_icon {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 30px 0 0;
+}
+.contacts__link_icon img {
+  max-width: 100%;
+}
+@media (max-width: 768.98px) {
+  .contacts__link_icon {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 25px 0 0;
+  }
+  .contacts__link_icon img {
+    -moz-transform: scale(0.9375);
+    -ms-transform: scale(0.9375);
+    -webkit-transform: scale(0.9375);
+    -o-transform: scale(0.9375);
+    transform: scale(0.9375);
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__link_icon {
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    margin: 0 20px 0 0;
+  }
+  .contacts__link_icon img {
+    -moz-transform: scale(0.875);
+    -ms-transform: scale(0.875);
+    -webkit-transform: scale(0.875);
+    -o-transform: scale(0.875);
+    transform: scale(0.875);
+  }
+}
+.contacts__link_value {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+}
+@media (max-width: 768.98px) {
+  .contacts__link_value {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__link_value {
+    font-size: 14px;
+  }
+}
+.contacts__link_label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--color-4);
+}
+@media (max-width: 768.98px) {
+  .contacts__link_label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__link_label {
+    font-size: 14px;
+  }
+}
+.contacts__btn {
+  padding: 54px 0 47px 70px;
+}
+.contacts__btn:hover {
+  padding: 54px 0 47px 65px;
+}
+.contacts__btn::before {
+  border: 1px solid var(--color-3);
+}
+@media (max-width: 1332px) {
+  .contacts__btn {
+    padding: 50.5px 0 43.5px 65px;
+  }
+  .contacts__btn:hover {
+    padding: 50.5px 0 43.5px 60px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .contacts__btn {
+    padding: 46.5px 0 40px 60px;
+  }
+  .contacts__btn:hover {
+    padding: 46.5px 0 40px 60px;
+  }
+  .contacts__btn:hover .btn-registration__arrow svg {
+    opacity: 0.3;
+  }
+}
+@media (max-width: 768.98px) {
+  .contacts__btn {
+    padding: 42px 0 35.5px 55px;
+  }
+  .contacts__btn:hover {
+    padding: 42px 0 35.5px 55px;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__btn {
+    padding: 38.5px 0 32.5px 50px;
+  }
+  .contacts__btn:hover {
+    padding: 38.5px 0 32.5px 50px;
+  }
+}
+.contacts__btn .btn-registration__text {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+.contacts__btn .btn-registration__arrow svg {
+  fill: var(--color-3);
+}
