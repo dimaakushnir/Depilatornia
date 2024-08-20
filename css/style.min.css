@@ -177,6 +177,11 @@ body.lock {
 }
 @media (max-width: 1024.98px) {
   .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 370px) {
+  .container {
     padding: 0 15px;
   }
 }
@@ -251,74 +256,11 @@ body.lock {
   border: 1px solid var(--color-1);
   transform: translate(0, -2.5px);
 }
-@media (max-width: 1332px) {
-  .btn-registration::before {
-    flex: 0 0 130px;
-    width: 130px;
-    height: 130px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .btn-registration::before {
-    flex: 0 0 120px;
-    width: 120px;
-    height: 120px;
-  }
-}
-@media (max-width: 768.98px) {
-  .btn-registration::before {
-    flex: 0 0 110px;
-    width: 110px;
-    height: 110px;
-  }
-}
-@media (max-width: 480.98px) {
-  .btn-registration::before {
-    flex: 0 0 100px;
-    width: 100px;
-    height: 100px;
-  }
-}
 .btn-registration:hover {
   padding: 55px 0 50.5px 65px;
 }
 .btn-registration:hover .btn-registration__arrow svg {
   opacity: 1;
-}
-@media (max-width: 1332px) {
-  .btn-registration {
-    padding: 50.5px 0 43.5px 65px;
-  }
-  .btn-registration:hover {
-    padding: 50.5px 0 43.5px 60px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .btn-registration {
-    padding: 46.5px 0 40px 60px;
-  }
-  .btn-registration:hover {
-    padding: 46.5px 0 40px 60px;
-  }
-  .btn-registration:hover .btn-registration__arrow svg {
-    opacity: 0.3;
-  }
-}
-@media (max-width: 768.98px) {
-  .btn-registration {
-    padding: 42px 0 35.5px 55px;
-  }
-  .btn-registration:hover {
-    padding: 42px 0 35.5px 55px;
-  }
-}
-@media (max-width: 480.98px) {
-  .btn-registration {
-    padding: 38.5px 0 32.5px 50px;
-  }
-  .btn-registration:hover {
-    padding: 38.5px 0 32.5px 50px;
-  }
 }
 .btn-registration__text {
   position: relative;
@@ -336,27 +278,14 @@ body.lock {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-@media (max-width: 1332px) {
+@media (max-width: 768.98px) {
   .btn-registration__text {
     font-size: 25px;
   }
 }
-@media (max-width: 1024.98px) {
-  .btn-registration__text {
-    font-size: 24px;
-    margin: 0 19px 0 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .btn-registration__text {
-    font-size: 22px;
-    margin: 0 17px 0 0;
-  }
-}
 @media (max-width: 480.98px) {
   .btn-registration__text {
-    font-size: 20px;
-    margin: 0 15px 0 0;
+    font-size: 24px;
   }
 }
 .btn-registration__arrow {
@@ -376,30 +305,6 @@ body.lock {
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-@media (max-width: 1332px) {
-  .btn-registration__arrow svg {
-    width: 38px;
-    height: 19.95px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .btn-registration__arrow svg {
-    width: 36px;
-    height: 18.9px;
-  }
-}
-@media (max-width: 768.98px) {
-  .btn-registration__arrow svg {
-    width: 33px;
-    height: 17.325px;
-  }
-}
-@media (max-width: 480.98px) {
-  .btn-registration__arrow svg {
-    width: 30px;
-    height: 15.75px;
-  }
 }
 
 h1 {
@@ -426,8 +331,7 @@ h1 {
 }
 @media (max-width: 480.98px) {
   h1 {
-    font-size: 48px;
-    letter-spacing: 0.02em;
+    font-size: 47px;
   }
 }
 @media (max-width: 370px) {
@@ -444,27 +348,27 @@ h2 {
 }
 @media (max-width: 1332px) {
   h2 {
-    font-size: 33px;
+    font-size: 34px;
   }
 }
 @media (max-width: 1024.98px) {
   h2 {
-    font-size: 30px;
+    font-size: 31px;
   }
 }
 @media (max-width: 768.98px) {
   h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 @media (max-width: 480.98px) {
   h2 {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 @media (max-width: 370px) {
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -500,19 +404,14 @@ h4 {
   font-weight: 600;
   line-height: 150%;
 }
-@media (max-width: 1024.98px) {
+@media (max-width: 768.98px) {
   h4 {
     font-size: 17px;
   }
 }
-@media (max-width: 768.98px) {
-  h4 {
-    font-size: 16px;
-  }
-}
 @media (max-width: 480.98px) {
   h4 {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -589,16 +488,6 @@ h4 {
   line-height: 150%;
   color: var(--color-3);
 }
-@media (max-width: 768.98px) {
-  .form__top-text {
-    font-size: 15px;
-  }
-}
-@media (max-width: 480.98px) {
-  .form__top-text {
-    font-size: 14px;
-  }
-}
 .form__row {
   display: flex;
   align-items: center;
@@ -619,7 +508,7 @@ h4 {
   .form__item {
     max-width: none;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
   }
 }
 .form__input {
@@ -656,6 +545,16 @@ h4 {
   font-weight: 400;
   line-height: 150%;
   color: #7F6E5F;
+}
+@media (max-width: 1200px) {
+  .form__bottom-text {
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .form__bottom-text {
+    text-align: center;
+  }
 }
 .checkbox__item:not(:last-child) {
   margin: 0 0 5.2px 0;
@@ -726,6 +625,11 @@ h4 {
   padding: 14px 0 14px 0;
   background-color: var(--color-3);
 }
+@media (max-width: 480.98px) {
+  .main-header {
+    padding: 10px 0 10px 0;
+  }
+}
 .main-header__row {
   display: flex;
   align-items: center;
@@ -740,7 +644,11 @@ h4 {
   .main-header__logo {
     flex: 1 1 100%;
     margin: 0 30px 0 0;
-    order: 1;
+  }
+}
+@media (max-width: 370px) {
+  .main-header__logo {
+    margin: 0 20px 0 0;
   }
 }
 @media (max-width: 1024.98px) {
@@ -751,16 +659,6 @@ h4 {
 .main-header__communication {
   display: flex;
   align-items: center;
-}
-@media (max-width: 1024.98px) {
-  .main-header__communication {
-    order: 2;
-  }
-}
-@media (max-width: 480.98px) {
-  .main-header__communication {
-    display: none;
-  }
 }
 .main-header__call {
   display: flex;
@@ -775,7 +673,6 @@ h4 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   position: relative;
-  z-index: 5;
 }
 .main-header__call:not(:last-child) {
   margin: 0 30px 0 0;
@@ -798,26 +695,43 @@ h4 {
     margin: 0 30px 0 0;
   }
 }
+@media (max-width: 480.98px) {
+  .main-header__call {
+    flex: 0 0 34px;
+    height: 34px;
+    width: 34px;
+  }
+  .main-header__call:not(:last-child) {
+    margin: 0 12px 0 0;
+  }
+}
 .main-header__btn {
   padding: 0 30px;
   position: relative;
-  z-index: 5;
+}
+@media (max-width: 480.98px) {
+  .main-header__btn {
+    padding: 0 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    height: 34px;
+  }
 }
 .main-header__burger {
   display: none;
 }
 @media (max-width: 1024.98px) {
   .main-header__burger {
-    order: 3;
     display: block;
-    flex: 0 0 30px;
-    width: 30px;
-    height: 18px;
+    flex: 0 0 33px;
+    width: 33px;
+    height: 21px;
     cursor: pointer;
     z-index: 5;
     background-color: transparent;
     position: relative;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 44px;
   }
   .main-header__burger span {
     -webkit-transition: all 0.3s ease 0s;
@@ -825,19 +739,25 @@ h4 {
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    top: 8px;
+    top: 9px;
     left: 0px;
     position: absolute;
     width: 100%;
-    height: 2px;
-    background-color: var(--color-1);
+    height: 3px;
+    background-color: #3F3F3F;
   }
   .main-header__burger span:first-child {
-    top: 0px;
+    top: 0.5px;
   }
   .main-header__burger span:last-child {
     top: auto;
     bottom: 0px;
+  }
+  .main-header__burger.active {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 57px;
   }
   .main-header__burger.active span {
     -moz-transform: scale(0);
@@ -845,6 +765,7 @@ h4 {
     -webkit-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0);
+    height: 2px;
   }
   .main-header__burger.active span:first-child {
     -moz-transform: rotate(-45deg);
@@ -852,7 +773,7 @@ h4 {
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 8px;
+    top: 9px;
   }
   .main-header__burger.active span:last-child {
     -moz-transform: rotate(45deg);
@@ -860,12 +781,12 @@ h4 {
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 8px;
+    bottom: 9px;
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 370px) {
   .main-header__burger {
-    order: 2;
+    margin: 0 0 0 34px;
   }
 }
 
@@ -875,6 +796,7 @@ h4 {
 @media (max-width: 1024.98px) {
   .menu-main-header__list {
     flex-direction: column;
+    align-items: center;
   }
 }
 .menu-main-header__item {
@@ -888,7 +810,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .menu-main-header__item {
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
 }
 .menu-main-header__link {
@@ -925,7 +847,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .menu-main-header__link {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -934,42 +856,79 @@ h4 {
   top: 0;
   left: -120%;
   width: 100%;
-  height: 100vh;
-  background-color: var(--color-3);
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 24px 0px rgba(171, 171, 171, 0.2509803922);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   z-index: 4;
-  padding: 79px 0 0 0;
+  padding: 77px 0 0 0;
 }
 @media (max-width: 1024.98px) {
   .mob-header.active {
     left: 0;
   }
 }
-.mob-header__top {
-  display: flex;
-  justify-content: flex-end;
-}
-@media (max-width: 480.98px) {
-  .mob-header__top .main-header__communication {
-    display: flex;
-  }
-  .mob-header__top:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
-}
 @media (max-width: 1024.98px) {
   .mob-header__body .menu-main-header {
     display: block;
+    margin: 0 0 10px 0;
   }
+}
+.mob-header__bottom {
+  padding: 0 0 20px 0;
+}
+.mob-header__bottom .main-header__communication {
+  flex-direction: column;
+}
+.mob-header__bottom .main-header__communication .main-header__call {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  width: auto;
+  height: auto;
+  margin: 0 0 20px 0;
+  overflow: visible;
+  border-radius: 0;
+}
+.mob-header__bottom .main-header__communication .main-header__call-img {
+  display: flex;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  margin: 0 12px 0 0;
+  position: relative;
+}
+.mob-header__bottom .main-header__communication .main-header__call-img img {
+  max-width: 100%;
+}
+.mob-header__bottom .main-header__communication .main-header__call-text {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-4);
+}
+.mob-header__bottom .main-header__communication .main-header__btn {
+  width: 177px;
 }
 
 .footer {
   padding: 30px 0;
   background-color: var(--color-4);
+}
+@media (max-width: 768.98px) {
+  .footer {
+    padding: 25px;
+  }
+}
+@media (max-width: 480.98px) {
+  .footer {
+    padding: 20px;
+  }
 }
 .footer__row {
   padding: 0 0 0 25px;
@@ -993,9 +952,13 @@ h4 {
     padding: 0 0 0 50px;
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 650px) {
   .footer__row {
     padding: 0;
+  }
+}
+@media (max-width: 480.98px) {
+  .footer__row {
     align-items: flex-start;
   }
 }
@@ -1008,13 +971,14 @@ h4 {
   }
 }
 @media (max-width: 650px) {
-  .footer__menu {
-    margin: 20px 0 0 0;
+  .footer__logo {
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 650px) {
   .footer__menu {
-    margin: 0;
+    margin: 20px 0 0 0;
   }
 }
 .footer__copyright {
@@ -1039,10 +1003,9 @@ h4 {
     text-align: center;
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 500px) {
   .footer__copyright {
-    font-size: 13px;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -1077,10 +1040,9 @@ h4 {
     transform: translate(0);
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 500px) {
   .menu-footer__list {
     flex-direction: column;
-    transform: translate(-31.5px, 0);
   }
 }
 .menu-footer__item {
@@ -1092,9 +1054,9 @@ h4 {
     margin: 0 15px;
   }
 }
-@media (max-width: 480.98px) {
+@media (max-width: 500px) {
   .menu-footer__item {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
   }
 }
 .menu-footer__link {
@@ -1130,7 +1092,6 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .menu-footer__link {
-    font-size: 13px;
     text-align: left;
   }
 }
@@ -1168,17 +1129,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .depilatornia__main:not(:last-child) {
-    margin: 0 0 50px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .depilatornia__main:not(:last-child) {
-    margin: 0 0 45px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .depilatornia__main:not(:last-child) {
-    margin: 0 0 40px 0;
+    margin: 0 0 0px 0;
   }
 }
 @media (max-width: 370px) {
@@ -1229,7 +1180,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .depilatornia__study:not(:last-child) {
-    margin: 0 0 60px 0;
+    margin: 0 0 248px 0;
   }
 }
 .depilatornia__price:not(:last-child) {
@@ -1242,11 +1193,16 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .depilatornia__price:not(:last-child) {
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
   }
 }
 .depilatornia__certificate:not(:last-child) {
   margin: 0 0 150px 0;
+}
+@media (max-width: 480.98px) {
+  .depilatornia__certificate:not(:last-child) {
+    margin: 0 0 140px 0;
+  }
 }
 .depilatornia__discounts:not(:last-child) {
   margin: 0 0 162px 0;
@@ -1355,7 +1311,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .main-depilatornia__column_content {
-    margin: 0 0 30px 0;
+    margin: 0 0 46px 0;
   }
 }
 .main-depilatornia__content {
@@ -1380,6 +1336,11 @@ h4 {
 .main-depilatornia__content-info:not(:last-child) {
   margin: 0 0 30px 0;
 }
+@media (max-width: 1024.98px) {
+  .main-depilatornia__content-info:not(:last-child) {
+    margin: 0 0 46px 0;
+  }
+}
 .main-depilatornia__subtitle {
   width: 100%;
   text-align: right;
@@ -1388,6 +1349,11 @@ h4 {
 .main-depilatornia__subtitle:not(:last-child) {
   margin: 0 0 30px 0;
 }
+@media (max-width: 1332px) {
+  .main-depilatornia__subtitle:not(:last-child) {
+    margin: 0 0 27.5px 0;
+  }
+}
 @media (max-width: 1024.98px) {
   .main-depilatornia__subtitle:not(:last-child) {
     margin: 0 0 25px 0;
@@ -1395,12 +1361,12 @@ h4 {
 }
 @media (max-width: 768.98px) {
   .main-depilatornia__subtitle:not(:last-child) {
-    margin: 0 0 20px 0;
+    margin: 0 0 22.5px 0;
   }
 }
 @media (max-width: 480.98px) {
   .main-depilatornia__subtitle:not(:last-child) {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
   }
 }
 .main-depilatornia__title {
@@ -1412,17 +1378,12 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .main-depilatornia__title:not(:last-child) {
-    margin: 0 0 25px 0;
+    margin: 0 0 46px 0;
   }
 }
-@media (max-width: 768.98px) {
-  .main-depilatornia__title:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .main-depilatornia__title:not(:last-child) {
-    margin: 0 0 15px 0;
+@media (max-width: 380px) {
+  .main-depilatornia__title {
+    text-align: right;
   }
 }
 .main-depilatornia__image-block {
@@ -1445,7 +1406,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .main-depilatornia__image-block {
-    padding: 0 0 75% 0;
+    padding: 0 0 75.5265% 0;
   }
 }
 .main-depilatornia__image {
@@ -1465,19 +1426,6 @@ h4 {
 }
 .info-main-depilatornia__title:not(:last-child) {
   margin: 0 0 20px 0;
-}
-@media (max-width: 768.98px) {
-  .info-main-depilatornia__title {
-    font-size: 19px;
-  }
-}
-@media (max-width: 480.98px) {
-  .info-main-depilatornia__title {
-    font-size: 18px;
-  }
-  .info-main-depilatornia__title:not(:last-child) {
-    margin: 0 0 15px 0;
-  }
 }
 .info-main-depilatornia__item {
   display: flex;
@@ -1503,11 +1451,6 @@ h4 {
 .info-main-depilatornia__item:not(:last-child) {
   margin: 0 0 10px 0;
 }
-@media (max-width: 480.98px) {
-  .info-main-depilatornia__item {
-    font-size: 13px;
-  }
-}
 
 .services-depilatornia {
   background-color: var(--color-1);
@@ -1522,17 +1465,17 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .services-depilatornia {
-    padding: 50px 0 88px 0;
+    padding: 50px 0 176px 0;
   }
 }
 @media (max-width: 768.98px) {
   .services-depilatornia {
-    padding: 45px 0 84px 0;
+    padding: 45px 0 176px 0;
   }
 }
 @media (max-width: 480.98px) {
   .services-depilatornia {
-    padding: 40px 0 80px 0;
+    padding: 40px 0 176px 0;
   }
 }
 .services-depilatornia__title {
@@ -1548,30 +1491,30 @@ h4 {
 }
 @media (max-width: 1332px) {
   .services-depilatornia__title {
-    font-size: 93px;
+    font-size: 94px;
   }
 }
 @media (max-width: 1024.98px) {
   .services-depilatornia__title {
-    font-size: 80px;
+    font-size: 82px;
   }
 }
 @media (max-width: 768.98px) {
   .services-depilatornia__title {
-    font-size: 67px;
+    font-size: 70px;
   }
 }
 @media (max-width: 480.98px) {
   .services-depilatornia__title {
-    font-size: 54px;
+    font-size: 58px;
   }
   .services-depilatornia__title:not(:last-child) {
-    margin: 0 0 15px 0;
+    margin: 0 0 24px 0;
   }
 }
 @media (max-width: 370px) {
   .services-depilatornia__title {
-    font-size: 50px;
+    font-size: 53px;
   }
 }
 .services-depilatornia__row {
@@ -1637,27 +1580,17 @@ h4 {
     padding: 24px 36px;
   }
 }
-@media (max-width: 1024.98px) {
-  .item-services-depilatornia__body {
-    padding: 24px 32px;
-  }
-}
-@media (max-width: 768.98px) {
-  .item-services-depilatornia__body {
-    padding: 24px 28px;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-services-depilatornia__body {
-    padding: 24px;
-  }
-}
 .item-services-depilatornia__content {
   width: 100%;
   flex: 1 1 100%;
 }
 .item-services-depilatornia__content:not(:last-child) {
   margin: 0 0 30px 0;
+}
+@media (max-width: 992.98px) {
+  .item-services-depilatornia__content:not(:last-child) {
+    margin: 0 0 72px 0;
+  }
 }
 .item-services-depilatornia__title {
   display: flex;
@@ -1674,54 +1607,6 @@ h4 {
 .item-services-depilatornia__title span:nth-child(2) {
   padding: 0 0 0 115px;
   margin: -14px 0 0 0;
-}
-@media (max-width: 1332px) {
-  .item-services-depilatornia__title {
-    font-size: 30px;
-  }
-  .item-services-depilatornia__title:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-  .item-services-depilatornia__title span:nth-child(2) {
-    padding: 0 0 0 106.25px;
-    margin: -13px 0 0 0;
-  }
-}
-@media (max-width: 1024.98px) {
-  .item-services-depilatornia__title {
-    font-size: 28px;
-  }
-  .item-services-depilatornia__title:not(:last-child) {
-    margin: 0 0 28px 0;
-  }
-  .item-services-depilatornia__title span:nth-child(2) {
-    padding: 0 0 0 97.5px;
-    margin: -12px 0 0 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .item-services-depilatornia__title {
-    font-size: 26px;
-  }
-  .item-services-depilatornia__title:not(:last-child) {
-    margin: 0 0 26px 0;
-  }
-  .item-services-depilatornia__title span:nth-child(2) {
-    padding: 0 0 0 88.75px;
-    margin: -11px 0 0 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-services-depilatornia__title {
-    font-size: 24px;
-  }
-  .item-services-depilatornia__title:not(:last-child) {
-    margin: 0 0 24px 0;
-  }
-  .item-services-depilatornia__title span:nth-child(2) {
-    padding: 0 0 0 80px;
-    margin: -10px 0 0 0;
-  }
 }
 .item-services-depilatornia__item {
   display: flex;
@@ -1747,14 +1632,6 @@ h4 {
   overflow: hidden;
   background-color: var(--color-3);
 }
-@media (max-width: 480.98px) {
-  .item-services-depilatornia__item {
-    font-size: 15px;
-  }
-  .item-services-depilatornia__item:not(:last-child) {
-    margin: 0 0 10px 0;
-  }
-}
 .item-services-depilatornia__btn {
   flex: 0 0 40px;
   padding: 0 30px;
@@ -1779,7 +1656,7 @@ h4 {
 .about-depilatornia__form-block {
   margin: -60px 0 20px 0;
   background: url("../img/form/bg-1.jpg") center no-repeat;
-  background-size: cover;
+  background-color: var(--color-4);
   position: relative;
   z-index: 2;
 }
@@ -1791,17 +1668,36 @@ h4 {
 .about-depilatornia__form-block .form__top-text:not(:last-child) {
   margin: 0 0 26px 0;
 }
+@media (max-width: 1200px) {
+  .about-depilatornia__form-block .form__top-text {
+    text-align: left;
+  }
+  .about-depilatornia__form-block .form__top-text:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
 .about-depilatornia__form-block .form-block__form {
   transform: translate(0, -4.5px);
 }
 @media (max-width: 1200px) {
   .about-depilatornia__form-block .form-block__content {
-    margin: 0 0 30px 0;
+    margin: 0 0 100px 0;
   }
 }
 @media (min-width: 1024.98px) {
   .about-depilatornia__form-block {
     padding: 40px 29px 40px 40px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .about-depilatornia__form-block {
+    margin: -120px 0 60px 0;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 480.98px) {
+  .about-depilatornia__form-block {
+    background-position: 42.5% 35%;
   }
 }
 .about-depilatornia__row {
@@ -1822,22 +1718,8 @@ h4 {
   flex-direction: column;
   margin: 0 0 40px 0;
 }
-@media (max-width: 992.98px) {
-  .about-depilatornia__column_main {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .about-depilatornia__column_main {
-    margin: 0 0 25px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .about-depilatornia__column_main {
-    margin: 0 0 20px 0;
-  }
-}
 .about-depilatornia__title {
+  font-size: 36px;
   flex: 1 1 100%;
 }
 .about-depilatornia__title:not(:last-child) {
@@ -1845,17 +1727,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .about-depilatornia__title:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .about-depilatornia__title:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .about-depilatornia__title:not(:last-child) {
-    margin: 0 0 15px 0;
+    margin: 0 0 24px 0;
   }
 }
 .about-depilatornia__text {
@@ -1876,14 +1748,17 @@ h4 {
     padding: 0;
   }
 }
-@media (max-width: 480.98px) {
-  .about-depilatornia__text {
-    font-size: 13px;
-  }
+.info-about-depilatornia {
+  overflow: hidden;
 }
 .info-about-depilatornia__row {
   display: flex;
   margin: 0 -12px;
+}
+@media (max-width: 992.98px) {
+  .info-about-depilatornia__row {
+    margin: 0 -6px;
+  }
 }
 @media (max-width: 370px) {
   .info-about-depilatornia__row {
@@ -1895,10 +1770,18 @@ h4 {
   flex: 0 1 50%;
   margin: 0 0 40px 0;
 }
+@media (max-width: 992.98px) {
+  .info-about-depilatornia__column {
+    padding: 0 6px;
+    margin: 0 0 60px 0;
+  }
+}
 @media (max-width: 370px) {
   .info-about-depilatornia__column {
     flex: 1 1 100%;
-    margin: 0 0 25px 0;
+  }
+  .info-about-depilatornia__column:first-child {
+    margin: 0 0 40px 0;
   }
 }
 @media (max-width: 370px) {
@@ -1920,9 +1803,6 @@ h4 {
   .item-info-about-depilatornia__number {
     font-size: 46px;
   }
-  .item-info-about-depilatornia__number:not(:last-child) {
-    margin: 0 0 12px 0;
-  }
 }
 .item-info-about-depilatornia__text {
   font-size: 16px;
@@ -1934,8 +1814,8 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .item-info-about-depilatornia__text {
-    font-size: 15px;
-    padding: 12px 0 0 0;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -1959,7 +1839,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .advantages-depilatornia {
-    padding: 40px 0 5px 0;
+    padding: 40px 0 0px 0;
   }
 }
 .advantages-depilatornia__row {
@@ -1987,21 +1867,22 @@ h4 {
     flex: 1 1 100%;
   }
 }
-@media (max-width: 480.98px) {
-  .advantages-depilatornia__column {
-    margin: 0 0 35px 0;
-  }
-}
 .advantages-depilatornia__item {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 @media (max-width: 992.98px) {
   .advantages-depilatornia__item {
     align-items: center;
     text-align: center;
+  }
+}
+@media (max-width: 480.98px) {
+  .advantages-depilatornia__item {
+    align-items: flex-start;
   }
 }
 .advantages-depilatornia__icon {
@@ -2027,12 +1908,12 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .advantages-depilatornia__icon {
-    flex: 0 0 50px;
-    width: 50px;
-    height: 50px;
-  }
-  .advantages-depilatornia__icon:not(:last-child) {
-    margin: 0 0 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
   }
 }
 .advantages-depilatornia__title {
@@ -2046,27 +1927,12 @@ h4 {
 .advantages-depilatornia__title:not(:last-child) {
   margin: 0 0 20px 0;
 }
-@media (max-width: 1332px) {
-  .advantages-depilatornia__title {
-    font-size: 25px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .advantages-depilatornia__title {
-    font-size: 24px;
-  }
-}
-@media (max-width: 768.98px) {
-  .advantages-depilatornia__title {
-    font-size: 22px;
-  }
-}
 @media (max-width: 480.98px) {
   .advantages-depilatornia__title {
-    font-size: 20px;
+    padding: 0 0 0 60px;
   }
   .advantages-depilatornia__title:not(:last-child) {
-    margin: 0 0 15px 0;
+    margin: 0 0 16px 0;
   }
 }
 .advantages-depilatornia__text {
@@ -2077,7 +1943,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .advantages-depilatornia__text {
-    font-size: 13px;
+    text-align: left;
   }
 }
 
@@ -2096,17 +1962,17 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .study-depilatornia__body {
-    padding: 30px;
+    padding: 40px 30px 40px 30px;
   }
 }
 @media (max-width: 768.98px) {
   .study-depilatornia__body {
-    padding: 25px;
+    padding: 40px 25px 40 25px;
   }
 }
 @media (max-width: 480.98px) {
   .study-depilatornia__body {
-    padding: 20px;
+    padding: 40px 20px 0 20px;
   }
 }
 .study-depilatornia__row {
@@ -2135,21 +2001,13 @@ h4 {
     margin: 0 0 40px 0;
   }
 }
-@media (max-width: 768.98px) {
-  .study-depilatornia__column_main {
-    margin: 0 0 35px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .study-depilatornia__column_main {
-    margin: 0 0 30px 0;
-  }
-}
 .study-depilatornia__column_image {
   flex: 1 1 100%;
   position: relative;
   display: flex;
   justify-content: flex-end;
+  margin: 0 0 0 0;
+  min-height: 100%;
 }
 .study-depilatornia__title {
   line-height: 130%;
@@ -2157,21 +2015,6 @@ h4 {
 }
 .study-depilatornia__title:not(:last-child) {
   margin: 0 0 40px 0;
-}
-@media (max-width: 1024.98px) {
-  .study-depilatornia__title:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .study-depilatornia__title:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .study-depilatornia__title:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
 }
 @media (max-width: 1024.98px) {
   .study-depilatornia__form .form__row {
@@ -2213,17 +2056,20 @@ h4 {
     transform: translate(0, 0);
     width: 100%;
     min-width: 0;
-    padding: 0 0 60% 0;
+    padding: 0 0 80% 0;
   }
 }
 @media (max-width: 768.98px) {
   .study-depilatornia__image {
-    padding: 0 0 70% 0;
+    padding: 0 0 90% 0;
   }
 }
 @media (max-width: 480.98px) {
   .study-depilatornia__image {
-    padding: 0 0 80% 0;
+    padding: 0;
+    transform: translate(0, 188px);
+    margin: -188px 0 0 0;
+    height: 372px;
   }
 }
 
@@ -2765,39 +2611,36 @@ h4 {
 
 .certificate-depilatornia__form-block {
   background: url("../img/form/bg-2.jpg") center no-repeat;
-  background-size: cover;
+  background-color: var(--color-1);
   position: relative;
   z-index: 2;
   padding: 37px 28px 30px 40px;
 }
 @media (max-width: 1200px) {
   .certificate-depilatornia__form-block {
-    padding: 37px 28px 100px 40px;
+    padding: 40px 28px 100px 40px;
   }
 }
 @media (max-width: 1024.98px) {
   .certificate-depilatornia__form-block {
-    padding: 30px 30px 100px 30px;
+    padding: 40px 30px 100px 30px;
+  }
+}
+@media (max-width: 900px) {
+  .certificate-depilatornia__form-block {
+    background-position: center 30%;
   }
 }
 @media (max-width: 768.98px) {
   .certificate-depilatornia__form-block {
-    padding: 25px 25px 100px 25px;
+    padding: 40px 25px 100px 25px;
+    background-position: center 20%;
   }
 }
 @media (max-width: 480.98px) {
   .certificate-depilatornia__form-block {
-    padding: 20px 20px 100px 20px;
-  }
-}
-@media (max-width: 400px) {
-  .certificate-depilatornia__form-block {
-    padding: 20px 20px 80px 20px;
-  }
-}
-@media (max-width: 350px) {
-  .certificate-depilatornia__form-block {
-    padding: 20px 20px 40px 20px;
+    padding: 40px 20px 144px 20px;
+    background-position: 35% 20%;
   }
 }
 .certificate-depilatornia__form-block .form-block__title {
@@ -2819,22 +2662,16 @@ h4 {
 @media (max-width: 480.98px) {
   .certificate-depilatornia__form-block .form-block__image {
     max-width: calc(100% - 40px);
-  }
-}
-@media (max-width: 400px) {
-  .certificate-depilatornia__form-block .form-block__image {
-    height: 164px;
-  }
-}
-@media (max-width: 350px) {
-  .certificate-depilatornia__form-block .form-block__image {
-    height: 124px;
+    bottom: -80px;
   }
 }
 .certificate-depilatornia__form-block .form__top-text:not(:last-child) {
   margin: 0 0 51px 0;
 }
 @media (max-width: 1200px) {
+  .certificate-depilatornia__form-block .form__top-text {
+    text-align: left;
+  }
   .certificate-depilatornia__form-block .form__top-text:not(:last-child) {
     margin: 0 0 20px 0;
   }
@@ -2847,7 +2684,7 @@ h4 {
 }
 @media (max-width: 1200px) {
   .certificate-depilatornia__form-block .form-block__content {
-    margin: 0 0 30px 0;
+    margin: 0 0 100px 0;
   }
 }
 
@@ -2869,10 +2706,12 @@ h4 {
   }
 }
 @media (max-width: 600px) {
+  .discounts-depilatornia__slider .slider__slide {
+    filter: blur(0px) !important;
+    -webkit-filter: blur(0px) !important;
+  }
   .discounts-depilatornia__slider .slider__slide.swiper-slide-next {
     opacity: 0.3;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
   }
 }
 .item-discounts-depilatornia {
@@ -2884,21 +2723,6 @@ h4 {
   height: 100%;
   min-height: 260px;
   padding: 20px;
-}
-@media (max-width: 1024.98px) {
-  .item-discounts-depilatornia {
-    min-height: 240px;
-  }
-}
-@media (max-width: 768.98px) {
-  .item-discounts-depilatornia {
-    min-height: 220px;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-discounts-depilatornia {
-    min-height: 200px;
-  }
 }
 .item-discounts-depilatornia_black {
   background: url("../img/form/bg-3.jpg") center no-repeat;
@@ -2945,28 +2769,8 @@ h4 {
   font-weight: 500;
   line-height: 120%;
 }
-@media (max-width: 1332px) {
-  .item-discounts-depilatornia__title {
-    font-size: 24px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .item-discounts-depilatornia__title {
-    font-size: 22px;
-  }
-}
-@media (max-width: 768.98px) {
-  .item-discounts-depilatornia__title {
-    font-size: 20px;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-discounts-depilatornia__title {
-    font-size: 18px;
-  }
-}
 .item-discounts-depilatornia__procent {
-  margin: 30px 0;
+  margin: 20px 0;
   font-family: Playfair;
   font-size: 46px;
   font-weight: 500;
@@ -2974,22 +2778,22 @@ h4 {
 }
 @media (max-width: 1332px) {
   .item-discounts-depilatornia__procent {
-    font-size: 41px;
+    font-size: 44px;
   }
 }
 @media (max-width: 1024.98px) {
   .item-discounts-depilatornia__procent {
-    font-size: 36px;
+    font-size: 42px;
   }
 }
 @media (max-width: 768.98px) {
   .item-discounts-depilatornia__procent {
-    font-size: 31px;
+    font-size: 39px;
   }
 }
 @media (max-width: 480.98px) {
   .item-discounts-depilatornia__procent {
-    font-size: 26px;
+    font-size: 36px;
   }
 }
 .item-discounts-depilatornia__text {
@@ -3011,18 +2815,13 @@ h4 {
     margin: 0 0 40px 0;
   }
 }
-@media (max-width: 768.98px) {
-  .slider__top:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .slider__top:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
 .slider__swiper.swiper {
   overflow: visible;
+}
+@media (max-width: 1024.98px) {
+  .slider__wrapper {
+    margin: 0 0 30px 0;
+  }
 }
 .slider__slide.swiper-slide {
   -webkit-transition: all 0.3s ease 0s;
@@ -3031,11 +2830,6 @@ h4 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   height: auto;
-}
-@media (max-width: 600px) {
-  .slider__slide.swiper-slide {
-    width: calc(100% - 20px);
-  }
 }
 @media (max-width: 1024.98px) {
   .slider .navigations__pagination {
@@ -3049,6 +2843,7 @@ h4 {
   justify-content: space-between;
 }
 .top-slider__title {
+  font-size: 36px;
   color: var(--color-1);
   margin: 0 20px 0 0;
 }
@@ -3117,14 +2912,20 @@ h4 {
 .navigations__pagination {
   display: none;
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 0 20px;
 }
 .navigations__pagination .swiper-pagination-bullet {
   opacity: 1;
-  background-color: #C3C3C3;
+  background-color: #D9D9D9;
+  margin: 0 5px !important;
 }
 .navigations__pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-4);
+  background-color: var(--color-1);
+}
+.navigations__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .item-reviews-depilatornia {
@@ -3138,39 +2939,12 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 1332px) {
-  .item-reviews-depilatornia {
-    padding: 29px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .item-reviews-depilatornia {
-    padding: 26px;
-  }
-}
-@media (max-width: 768.98px) {
-  .item-reviews-depilatornia {
-    padding: 23px;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-reviews-depilatornia {
-    padding: 20px;
-    min-height: 220px;
-  }
-}
 .item-reviews-depilatornia__qoute {
   margin: 24px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
   color: var(--color-1);
-}
-@media (max-width: 480.98px) {
-  .item-reviews-depilatornia__qoute {
-    margin: 18px 0;
-    font-size: 13px;
-  }
 }
 .stars {
   display: flex;
@@ -3209,13 +2983,6 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 480.98px) {
-  .person__image {
-    flex: 0 0 48px;
-    width: 48px;
-    height: 48px;
-  }
-}
 .person__info {
   display: flex;
   flex-direction: column;
@@ -3227,21 +2994,11 @@ h4 {
   line-height: 150%;
   color: var(--color-1);
 }
-@media (max-width: 480.98px) {
-  .person__name {
-    font-size: 13px;
-  }
-}
 .person__position {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
   color: var(--color-2);
-}
-@media (max-width: 480.98px) {
-  .person__position {
-    font-size: 13px;
-  }
 }
 
 .difference-depilatornia {
@@ -3265,7 +3022,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .difference-depilatornia {
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
   }
 }
 .difference-depilatornia__top:not(:last-child) {
@@ -3300,7 +3057,8 @@ h4 {
 }
 @media (max-width: 600px) {
   .difference-depilatornia__column:last-child .item-difference-depilatornia__content {
-    padding: 20px;
+    text-align: left;
+    padding: 20px 10px;
   }
 }
 @media (max-width: 1200px) {
@@ -3322,6 +3080,11 @@ h4 {
   text-align: center;
   color: var(--color-1);
 }
+@media (max-width: 480.98px) {
+  .top-difference-depilatornia__title {
+    text-align: left;
+  }
+}
 
 .item-difference-depilatornia {
   border-radius: 6px;
@@ -3333,6 +3096,8 @@ h4 {
 @media (max-width: 600px) {
   .item-difference-depilatornia {
     flex-direction: column;
+    background-color: transparent;
+    padding: 0 20px;
   }
 }
 .item-difference-depilatornia__image {
@@ -3352,13 +3117,8 @@ h4 {
 }
 @media (max-width: 600px) {
   .item-difference-depilatornia__image {
-    order: 2;
-    padding: 0 0 70% 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-difference-depilatornia__image {
-    padding: 0 0 80% 0;
+    order: 1;
+    padding: 0 0 50.6% 0;
   }
 }
 .item-difference-depilatornia__content {
@@ -3369,16 +3129,13 @@ h4 {
 }
 @media (max-width: 600px) {
   .item-difference-depilatornia__content {
-    order: 1;
-    margin: 0 0 10px 0;
-  }
-}
-@media (max-width: 600px) {
-  .item-difference-depilatornia__content {
-    padding: 20px;
+    background-color: var(--color-3);
+    order: 2;
+    padding: 20px 10px;
   }
 }
 .item-difference-depilatornia__title {
+  font-size: 26px;
   color: var(--color-4);
 }
 .item-difference-depilatornia__title:not(:last-child) {
@@ -3396,12 +3153,12 @@ h4 {
 }
 @media (max-width: 768.98px) {
   .item-difference-depilatornia__title:not(:last-child) {
-    margin: 0 0 32.7px 0;
+    margin: 0 0 30px 0;
   }
 }
 @media (max-width: 480.98px) {
   .item-difference-depilatornia__title:not(:last-child) {
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
   }
 }
 .item-difference-depilatornia__elements {
@@ -3415,16 +3172,6 @@ h4 {
 .item-difference-depilatornia__element:first-child {
   flex: 1 1 100%;
 }
-@media (max-width: 768.98px) {
-  .item-difference-depilatornia__element:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .item-difference-depilatornia__element:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
 
 .element-difference-depilatornia__title {
   color: var(--color-1);
@@ -3437,11 +3184,6 @@ h4 {
   font-weight: 400;
   line-height: 150%;
   color: var(--color-2);
-}
-@media (max-width: 480.98px) {
-  .element-difference-depilatornia__text {
-    font-size: 13px;
-  }
 }
 
 .faqs__row {
@@ -3471,25 +3213,11 @@ h4 {
   }
 }
 .content-faqs__title {
+  font-size: 36px;
   color: var(--color-1);
 }
 .content-faqs__title:not(:last-child) {
   margin: 0 0 40px 0;
-}
-@media (max-width: 1024.98px) {
-  .content-faqs__title:not(:last-child) {
-    margin: 0 0 35px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .content-faqs__title:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .content-faqs__title:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
 }
 .content-faqs__text {
   color: var(--color-1);
@@ -3500,28 +3228,15 @@ h4 {
 .content-faqs__text:not(:last-child) {
   margin: 0 0 40px 0;
 }
-@media (max-width: 1024.98px) {
-  .content-faqs__text:not(:last-child) {
-    margin: 0 0 35px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .content-faqs__text:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .content-faqs__text {
-    font-size: 13px;
-  }
-  .content-faqs__text:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
-}
 .content-faqs__btn {
   width: 220px;
   height: 48px;
   font-weight: 400;
+}
+@media (max-width: 480.98px) {
+  .content-faqs__btn {
+    width: 100%;
+  }
 }
 
 .item-faqs {
@@ -3545,8 +3260,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .item-faqs__text {
-    padding: 6px 20px 20px 20px;
-    font-size: 13px;
+    padding: 0 0 20px 0;
   }
 }
 
@@ -3566,7 +3280,7 @@ h4 {
 }
 @media (max-width: 480.98px) {
   .top-item-faqs {
-    padding: 20px;
+    padding: 25.5px 0;
   }
 }
 .top-item-faqs__title {
@@ -3575,6 +3289,17 @@ h4 {
   line-height: 150%;
   color: var(--color-1);
   margin: 0 20px 0 0;
+}
+@media (max-width: 768.98px) {
+  .top-item-faqs__title {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480.98px) {
+  .top-item-faqs__title {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 .top-item-faqs__icon {
   flex: 0 0 20px;
@@ -3618,17 +3343,27 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .contacts__title span {
-    font-size: 60px;
+    font-size: 61px;
   }
 }
 @media (max-width: 768.98px) {
   .contacts__title span {
-    font-size: 54px;
+    font-size: 53px;
   }
 }
 @media (max-width: 480.98px) {
   .contacts__title span {
-    font-size: 48px;
+    font-size: 44px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .contacts__title {
+    order: 2;
+  }
+}
+@media (max-width: 480.98px) {
+  .contacts__title {
+    padding: 6.5px 0;
   }
 }
 .contacts__map {
@@ -3646,6 +3381,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .contacts__map {
+    order: 3;
     width: calc(100% - 72px);
     flex: auto;
   }
@@ -3669,19 +3405,9 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .contacts__content {
+    order: 1;
     align-items: flex-start;
-    padding: 35px 30px 40px 72px;
-  }
-}
-@media (max-width: 768.98px) {
-  .contacts__content {
-    padding: 30px 30px 35px 65px;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__content {
-    padding: 25px 30px 30px 58px;
-    padding: 25px 30px 30px 25px;
+    padding: 40px 20px 60px 20px;
   }
 }
 .contacts__body {
@@ -3705,17 +3431,7 @@ h4 {
 }
 @media (max-width: 1024.98px) {
   .contacts__links:not(:last-child) {
-    margin: 0 0 35px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .contacts__links:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__links:not(:last-child) {
-    margin: 0 0 25px 0;
+    margin: 0 0 60px 0;
   }
 }
 .contacts__link {
@@ -3724,21 +3440,6 @@ h4 {
 }
 .contacts__link:not(:last-child) {
   margin: 0 0 40px 0;
-}
-@media (max-width: 1024.98px) {
-  .contacts__link:not(:last-child) {
-    margin: 0 0 35px 0;
-  }
-}
-@media (max-width: 768.98px) {
-  .contacts__link:not(:last-child) {
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__link:not(:last-child) {
-    margin: 0 0 25px 0;
-  }
 }
 .contacts__link_time {
   align-items: flex-start;
@@ -3759,67 +3460,17 @@ h4 {
 .contacts__link_icon img {
   max-width: 100%;
 }
-@media (max-width: 768.98px) {
-  .contacts__link_icon {
-    flex: 0 0 30px;
-    width: 30px;
-    height: 30px;
-    margin: 0 25px 0 0;
-  }
-  .contacts__link_icon img {
-    -moz-transform: scale(0.9375);
-    -ms-transform: scale(0.9375);
-    -webkit-transform: scale(0.9375);
-    -o-transform: scale(0.9375);
-    transform: scale(0.9375);
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__link_icon {
-    flex: 0 0 28px;
-    width: 28px;
-    height: 28px;
-    margin: 0 20px 0 0;
-  }
-  .contacts__link_icon img {
-    -moz-transform: scale(0.875);
-    -ms-transform: scale(0.875);
-    -webkit-transform: scale(0.875);
-    -o-transform: scale(0.875);
-    transform: scale(0.875);
-  }
-}
 .contacts__link_value {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   color: #fff;
 }
-@media (max-width: 768.98px) {
-  .contacts__link_value {
-    font-size: 15px;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__link_value {
-    font-size: 14px;
-  }
-}
 .contacts__link_label {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
   color: var(--color-4);
-}
-@media (max-width: 768.98px) {
-  .contacts__link_label {
-    font-size: 15px;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__link_label {
-    font-size: 14px;
-  }
 }
 .contacts__btn {
   padding: 54px 0 47px 70px;
@@ -3829,41 +3480,6 @@ h4 {
 }
 .contacts__btn::before {
   border: 1px solid var(--color-3);
-}
-@media (max-width: 1332px) {
-  .contacts__btn {
-    padding: 50.5px 0 43.5px 65px;
-  }
-  .contacts__btn:hover {
-    padding: 50.5px 0 43.5px 60px;
-  }
-}
-@media (max-width: 1024.98px) {
-  .contacts__btn {
-    padding: 46.5px 0 40px 60px;
-  }
-  .contacts__btn:hover {
-    padding: 46.5px 0 40px 60px;
-  }
-  .contacts__btn:hover .btn-registration__arrow svg {
-    opacity: 0.3;
-  }
-}
-@media (max-width: 768.98px) {
-  .contacts__btn {
-    padding: 42px 0 35.5px 55px;
-  }
-  .contacts__btn:hover {
-    padding: 42px 0 35.5px 55px;
-  }
-}
-@media (max-width: 480.98px) {
-  .contacts__btn {
-    padding: 38.5px 0 32.5px 50px;
-  }
-  .contacts__btn:hover {
-    padding: 38.5px 0 32.5px 50px;
-  }
 }
 .contacts__btn .btn-registration__text {
   background-color: var(--color-1);

@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="main-header__communication" data-da="mob-header__top, 0, 480.98">
+                <div class="main-header__communication">
                     <a href="tel:+380961392055" class="main-header__call">
                         <img src="img/icons/call.svg" alt="call">
                     </a>
@@ -68,8 +68,20 @@
     </div>
     <div class="header__mob mob-header">
         <div class="mob-header__container container">
-            <div class="mob-header__top"></div>
             <div class="mob-header__body"></div>
+            <div class="mob-header__bottom">
+                <div class="main-header__communication">
+                    <a href="tel:+380961392055" class="main-header__call">
+                        <span class="main-header__call-img">
+                            <img src="img/icons/call.svg" alt="call">
+                        </span>
+                        <span class="main-header__call-text">+38 (096) 139 20 55</span>
+                    </a>
+                    <a href="" class="main-header__btn btn btn_black">
+                        Sesja próbna
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -2262,8 +2274,9 @@
             </section>
             <section class="depilatornia__certificate certificate-depilatornia">
                 <div class="certificate-depilatornia__container container">
-                    <div class="certificate-depilatornia__form-block form-block">
-                        <div class="form-block__content wow animate__animated animate__fadeInUp">
+                    <div
+                        class="certificate-depilatornia__form-block form-block wow animate__animated animate__fadeInUp">
+                        <div class="form-block__content ">
                             <h2 class="form-block__title">
                                 Karta podarunkowa na zabiegi depilacji
                             </h2>
@@ -2271,7 +2284,7 @@
                                 <img src="img/form/01.jpg" alt="certificate-depilatornia-img">
                             </div>
                         </div>
-                        <form action="#" class="form-block__form form wow animate__animated animate__fadeInUp">
+                        <form action="#" class="form-block__form form">
                             <div class="form__top-text">
                                 Wypełnij formularz, a my skontaktujemy się z Tobą w ciągu 10 minut
                             </div>
@@ -2320,14 +2333,14 @@
                         <div class="slider__top top-slider wow animate__animated animate__fadeInUp">
                             <h2 class="top-slider__title">Promocje i rabaty</h2>
                             <div class="top-slider__navigations navigations">
-                                <div
-                                    class="navigations__btn navigations__btn_prev discounts-depilatornia__navigations-btn discounts-depilatornia__navigations-btn_prev">
+                                <div class="navigations__btn navigations__btn_prev discounts-depilatornia__navigations-btn discounts-depilatornia__navigations-btn_prev"
+                                    data-da="discounts-depilatornia-navigations__bottom, 0, 1024.98">
                                     <svg>
                                         <use xlink:href="#arrow"></use>
                                     </svg>
                                 </div>
-                                <div
-                                    class="navigations__btn navigations__btn_next discounts-depilatornia__navigations-btn discounts-depilatornia__navigations-btn_next">
+                                <div class="navigations__btn navigations__btn_next discounts-depilatornia__navigations-btn discounts-depilatornia__navigations-btn_next"
+                                    data-da="discounts-depilatornia-navigations__bottom, 2, 1024.98">
                                     <svg>
                                         <use xlink:href="#arrow"></use>
                                     </svg>
@@ -2428,7 +2441,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="navigations__pagination discounts-depilatornia__pagination"></div>
+                                <div class="navigations__bottom discounts-depilatornia-navigations__bottom">
+                                    <div class="navigations__pagination discounts-depilatornia__pagination"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2440,14 +2455,14 @@
                         <div class="slider__top top-slider wow animate__animated animate__fadeInUp">
                             <h2 class="top-slider__title">Recenzje</h2>
                             <div class="top-slider__navigations navigations">
-                                <div
-                                    class="navigations__btn navigations__btn_prev reviews-depilatornia__navigations-btn reviews-depilatornia__navigations-btn_prev">
+                                <div class="navigations__btn navigations__btn_prev reviews-depilatornia__navigations-btn reviews-depilatornia__navigations-btn_prev"
+                                    data-da="reviews-depilatornia-navigations__bottom, 0, 1024.98">
                                     <svg>
                                         <use xlink:href="#arrow"></use>
                                     </svg>
                                 </div>
-                                <div
-                                    class="navigations__btn navigations__btn_next reviews-depilatornia__navigations-btn reviews-depilatornia__navigations-btn_next">
+                                <div class="navigations__btn navigations__btn_next reviews-depilatornia__navigations-btn reviews-depilatornia__navigations-btn_next"
+                                    data-da="reviews-depilatornia-navigations__bottom, 2, 1024.98">
                                     <svg>
                                         <use xlink:href="#arrow"></use>
                                     </svg>
@@ -2614,7 +2629,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="navigations__pagination reviews-depilatornia__pagination"></div>
+                                <div class="navigations__bottom reviews-depilatornia-navigations__bottom">
+                                    <div class="navigations__pagination reviews-depilatornia__pagination"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
